@@ -49,7 +49,7 @@ if [[ "${REQUIRE_UMI}" == "1" && -z "${R1_B}" ]]; then
     exit 2
 fi
 
-PIPELINE_VERSION="4.2.0-targeted-UMI-AB"
+PIPELINE_VERSION="4.3.0-targeted-UMI-AB"
 THREADS="${THREADS_PER_SAMPLE}"
 SAMPLE_ROOT="${RESULT_DIR}/${SAMPLE}"
 WORK_DIR="${SAMPLE_ROOT}/work"
@@ -144,6 +144,7 @@ required_files=(
     "${CODE_DIR}/00_validate_umi_summary.py"
     "${CODE_DIR}/fusion_common.py"
     "${CODE_DIR}/01_prepare_unique_sequences.py"
+    "${CODE_DIR}/02_rotate_hpv_reference.py"
     "${CODE_DIR}/02_select_hpv_candidates.py"
     "${CODE_DIR}/03_call_and_aggregate_fusions.py"
     "${CODE_DIR}/04_prepare_technical_rescue.py"
@@ -201,7 +202,8 @@ done
 for script_file in \
     "${CODE_DIR}/00_build_run_manifest.py" "${CODE_DIR}/00_verify_md5.py" \
     "${CODE_DIR}/00_validate_umi_summary.py" "${CODE_DIR}/fusion_common.py" \
-    "${CODE_DIR}/01_prepare_unique_sequences.py" "${CODE_DIR}/02_select_hpv_candidates.py" \
+    "${CODE_DIR}/01_prepare_unique_sequences.py" "${CODE_DIR}/02_rotate_hpv_reference.py" \
+    "${CODE_DIR}/02_select_hpv_candidates.py" \
     "${CODE_DIR}/03_call_and_aggregate_fusions.py" "${CODE_DIR}/04_prepare_technical_rescue.py" \
     "${CODE_DIR}/05_finalize_fusion_results.py" "${CODE_DIR}/98_validate_results.py" \
     "${CODE_DIR}/01_run_one_sample.sh"; do
@@ -380,6 +382,24 @@ fi
 HPV_ALIGNMENTS="${WORK_DIR}/${SAMPLE}.hpv_candidates.tsv"
 STAR_QUERIES="${WORK_DIR}/${SAMPLE}.star_queries.fa"
 HPV_SUMMARY="${WORK_DIR}/${SAMPLE}.hpv_candidate_summary.json"
+ROTATED_HPV_REF=""
+
+prepare_rotated_hpv_index() {
+    [[ -z "${ROTATED_HPV_REF}" ]] || return 0
+    ROTATED_HPV_DIR="$(mktemp -d "${WORK_DIR}/.hpv-circular.XXXXXXXX")"
+    trap 'rm -rf -- "${ROTATED_HPV_DIR}"' EXIT
+    ROTATED_HPV_REF="${ROTATED_HPV_DIR}/rotated.fa"
+    python3 "${CODE_DIR}/02_rotate_hpv_reference.py" "${HPV_REF}" > "${ROTATED_HPV_REF}"
+    bwa index "${ROTATED_HPV_REF}" > "${LOG_DIR}/hpv_circular_index.log" 2>&1
+}
+
+align_hpv() {
+    local query_fasta="$1"
+    bwa mem -Y -t "${THREADS}" "${ROTATED_HPV_REF}" "${query_fasta}" &&
+        printf '@CO\tHPV_ORIGINAL_REFERENCE\n' &&
+        bwa mem -Y -t "${THREADS}" "${HPV_REF}" "${query_fasta}"
+}
+
 STEP_START="$(date +%s)"
 HPV_MARKER="${STATE_DIR}/03_hpv_candidate_alignment.done"
 if stage_ready "${HPV_MARKER}" "${HPV_ALIGNMENTS}" "${HPV_SUMMARY}"; then
@@ -388,11 +408,12 @@ if stage_ready "${HPV_MARKER}" "${HPV_ALIGNMENTS}" "${HPV_SUMMARY}"; then
 else
     STEP_STATUS="RUN"
     rm -f "${HPV_MARKER}"
-    echo "[STEP 3/11] Align each exact unique sequence to HPV once"
-    bwa mem -Y -t "${THREADS}" "${HPV_REF}" "${UNIQUE_FASTA}" \
+    echo "[STEP 3/11] Align exact unique sequences to original and rotated HPV references"
+    prepare_rotated_hpv_index
+    align_hpv "${UNIQUE_FASTA}" \
         2> "${LOG_DIR}/03_bwa_hpv.stderr.log" \
         | python3 "${CODE_DIR}/02_select_hpv_candidates.py" \
-            --sam - \
+            --sam - --rotated-first \
             --unique-fasta "${UNIQUE_FASTA}" \
             --out-alignments "${HPV_ALIGNMENTS}" \
             --out-star-fasta "${STAR_QUERIES}" \
@@ -543,10 +564,11 @@ if [[ "${RESCUE_COUNT}" -gt 0 ]]; then
         STEP_STATUS="RUN"
         rm -f "${RESCUE_HPV_MARKER}"
         echo "[STEP 7/11] Re-align ${RESCUE_COUNT} unique trimmed rescue sequences to HPV"
-        bwa mem -Y -t "${THREADS}" "${HPV_REF}" "${RESCUE_FASTA}" \
+        prepare_rotated_hpv_index
+        align_hpv "${RESCUE_FASTA}" \
             2> "${LOG_DIR}/07_rescue_bwa_hpv.stderr.log" \
             | python3 "${CODE_DIR}/02_select_hpv_candidates.py" \
-                --sam - \
+                --sam - --rotated-first \
                 --unique-fasta "${RESCUE_FASTA}" \
                 --out-alignments "${RESCUE_HPV_ALIGNMENTS}" \
                 --out-star-fasta "${RESCUE_STAR_QUERIES}" \

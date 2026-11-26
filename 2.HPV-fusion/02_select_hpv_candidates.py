@@ -17,6 +17,8 @@ from fusion_common import cigar_metrics, iter_fasta, parse_sam_tags, wrap_fasta
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--sam", default="-", help="BWA SAM, or - for stdin")
+    parser.add_argument("--rotated-first", action="store_true",
+                        help="Read midpoint-rotated SAM first, then original SAM after the stream delimiter")
     parser.add_argument("--unique-fasta", required=True)
     parser.add_argument("--out-alignments", required=True)
     parser.add_argument("--out-star-fasta", required=True)
@@ -38,6 +40,9 @@ def main() -> None:
     sam_handle = sys.stdin if args.sam == "-" else open(args.sam, "r", encoding="utf-8")
     ref_lengths: Dict[str, int] = {}
     candidates: Dict[str, dict] = {}
+    rotated_candidates: Dict[str, dict] = {}
+    rotated_scores: Dict[str, int] = {}
+    rotated = args.rotated_first
     counts = {
         "sam_records": 0,
         "primary_mapped_records": 0,
@@ -50,6 +55,9 @@ def main() -> None:
 
     try:
         for raw_line in sam_handle:
+            if raw_line.rstrip("\r\n") == "@CO\tHPV_ORIGINAL_REFERENCE":
+                rotated = False
+                continue
             if raw_line.startswith("@SQ"):
                 fields = raw_line.rstrip("\n").split("\t")
                 values = dict(item.split(":", 1) for item in fields[1:] if ":" in item)
@@ -74,6 +82,26 @@ def main() -> None:
             query_length = len(fields[9])
             reverse = bool(flag & 0x10)
             metrics = cigar_metrics(cigar, query_length, reverse)
+            ref_length = ref_lengths.get(hpv_ref, 0)
+            ref_end1 = ref_start1 + metrics.ref_bases - 1
+            tags = parse_sam_tags(fields)
+            score = int(tags.get("AS", str(metrics.match_bases)))
+            if rotated:
+                midpoint = ref_length // 2
+                origin = ref_length - midpoint
+                if not ref_start1 <= origin < ref_end1:
+                    continue
+                rotated_scores[sequence_id] = max(score, rotated_scores.get(sequence_id, score))
+                # Keep an unwrapped interval so the caller can select the correct
+                # end by strand, then fold that breakpoint into 1..ref_length.
+                ref_start1 += midpoint
+                ref_end1 += midpoint
+            else:
+                alternative_score = rotated_scores.get(sequence_id)
+                if alternative_score is not None:
+                    if score < alternative_score:
+                        continue
+                    rotated_candidates.pop(sequence_id, None)
             left_flank = metrics.query_start0
             right_flank = query_length - metrics.query_end0
             if metrics.match_bases < args.prefilter_min_hpv:
@@ -81,13 +109,11 @@ def main() -> None:
             if max(left_flank, right_flank) < args.prefilter_min_flank:
                 continue
             counts["partial_prefilter_records"] += 1
-            tags = parse_sam_tags(fields)
-            ref_end1 = ref_start1 + metrics.ref_bases - 1
             row = {
                 "sequence_id": sequence_id,
                 "query_length": query_length,
                 "hpv_ref": hpv_ref,
-                "hpv_ref_length": ref_lengths.get(hpv_ref, 0),
+                "hpv_ref_length": ref_length,
                 "flag": flag,
                 "hpv_strand": "-" if reverse else "+",
                 "mapq": mapq,
@@ -101,15 +127,20 @@ def main() -> None:
                 "left_flank_bases": left_flank,
                 "right_flank_bases": right_flank,
                 "edit_distance": int(tags.get("NM", "0")),
-                "alignment_score": int(tags.get("AS", str(metrics.match_bases))),
+                "alignment_score": score,
             }
-            previous = candidates.get(sequence_id)
+            destination = rotated_candidates if rotated else candidates
+            previous = destination.get(sequence_id)
             if previous is None or candidate_rank(row) > candidate_rank(previous):
-                candidates[sequence_id] = row
+                destination[sequence_id] = row
     finally:
         if sam_handle is not sys.stdin:
             sam_handle.close()
 
+    if rotated:
+        raise ValueError("Missing original-reference SAM stream")
+    candidates.update(rotated_candidates)
+    counts["circular_origin_candidates"] = len(rotated_candidates)
     counts["candidate_sequences"] = len(candidates)
     align_tmp = args.out_alignments + ".tmp"
     fasta_tmp = args.out_star_fasta + ".tmp"
