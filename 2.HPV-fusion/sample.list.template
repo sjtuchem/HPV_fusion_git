@@ -1,0 +1,4 @@
+# 必须使用Tab分隔；不要用空格代替Tab。
+sample	merged_fastq	raw_r1_a	raw_r2_a	raw_r1_b	raw_r2_b
+# 本靶向UMI版本要求A、B两管全部填写；merged FASTQ应为同一样本A+B的现成合并数据。
+sample1	/absolute/path/sample1_AB_merged.fastq.gz	/absolute/path/sample1A_R1.fastq.gz	/absolute/path/sample1A_R2.fastq.gz	/absolute/path/sample1B_R1.fastq.gz	/absolute/path/sample1B_R2.fastq.gz

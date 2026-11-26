@@ -1,0 +1,2848 @@
+nohup: 忽略输入
+============================================================
+On-target rates generic pipeline
+Start time   : 2026-10-27 19:40:36
+Config       : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/code/config.sh
+RAW_DIR      : /data2/lindf/1_rawdata_fastq/HPV_fusion_lib/Targeted_Library_Rawdata/Targeted_Library_Tissue/Lib_Expression
+CODE_DIR     : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/code
+RESULT_DIR   : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result
+PRIMER_EXCEL : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/code/20250520_126_plex.xlsx
+SAMPLE_TABLE : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/code/samples.tsv
+============================================================
+============================================================
+Preprocessing enabled samples: 56
+GNU parallel jobs=5, PEAR/fastp threads=20
+============================================================
+============================================================
+[SAMPLE] Tissue1
+[A_DIR]  Sample_JZ26222917-LibExpression20260827-LibTissue1A
+[B_DIR]  Sample_JZ26222917-LibExpression20260827-LibTissue1B
+============================================================
+[SKIP] A+B merge already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue1_A_B_merged.fastq.gz
+[SKIP] fastp already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue1_qc1.fastq.gz
+[DONE] Sample complete: Tissue1
+============================================================
+[SAMPLE] Tissue15
+[A_DIR]  Sample_JZ26222917-LibExpression20260827-LibTissue15A
+[B_DIR]  Sample_JZ26222917-LibExpression20260827-LibTissue15B
+============================================================
+[SKIP] A+B merge already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue15_A_B_merged.fastq.gz
+[SKIP] fastp already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue15_qc1.fastq.gz
+[DONE] Sample complete: Tissue15
+============================================================
+[SAMPLE] Tissue80
+[A_DIR]  Sample_JZ26222917-LibExpression20260827-LibTissue80A
+[B_DIR]  Sample_JZ26222917-LibExpression20260827-LibTissue80B
+============================================================
+[SKIP] A+B merge already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue80_A_B_merged.fastq.gz
+[SKIP] fastp already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue80_qc1.fastq.gz
+[DONE] Sample complete: Tissue80
+============================================================
+[SAMPLE] Tissue26
+[A_DIR]  Sample_JZ26222917-LibExpression20260827-LibTissue26A
+[B_DIR]  Sample_JZ26222917-LibExpression20260827-LibTissue26B
+============================================================
+[SKIP] A+B merge already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue26_A_B_merged.fastq.gz
+[SKIP] fastp already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue26_qc1.fastq.gz
+[DONE] Sample complete: Tissue26
+============================================================
+[SAMPLE] Tissue50
+[A_DIR]  Sample_JZ26222917-LibExpression20260827-LibTissue50A
+[B_DIR]  Sample_JZ26222917-LibExpression20260827-LibTissue50B
+============================================================
+[SKIP] A+B merge already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue50_A_B_merged.fastq.gz
+[SKIP] fastp already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue50_qc1.fastq.gz
+[DONE] Sample complete: Tissue50
+============================================================
+[SAMPLE] Tissue41
+[A_DIR]  Sample_JZ26222917-LibExpression20260827-LibTissue41A
+[B_DIR]  Sample_JZ26222917-LibExpression20260827-LibTissue41B
+============================================================
+[SKIP] A+B merge already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue41_A_B_merged.fastq.gz
+[SKIP] fastp already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue41_qc1.fastq.gz
+[DONE] Sample complete: Tissue41
+============================================================
+[SAMPLE] TissueC2@2
+[A_DIR]  Sample_JZ26222917-LibExpression20260827-LibTissueC2@2A
+[B_DIR]  Sample_JZ26222917-LibExpression20260827-LibTissueC2@2B
+============================================================
+[SKIP] A+B merge already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/TissueC2@2_A_B_merged.fastq.gz
+[SKIP] fastp already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/TissueC2@2_qc1.fastq.gz
+[DONE] Sample complete: TissueC2@2
+============================================================
+[SAMPLE] Tissue81
+[A_DIR]  Sample_JZ26222917-LibExpression20260827-LibTissue81A
+[B_DIR]  Sample_JZ26222917-LibExpression20260827-LibTissue81B
+============================================================
+[SKIP] A+B merge already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue81_A_B_merged.fastq.gz
+[SKIP] fastp already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue81_qc1.fastq.gz
+[DONE] Sample complete: Tissue81
+============================================================
+[SAMPLE] Tissue6
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue6A
+[B_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue6B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue6_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 16522050
+total bases: 1891734410
+Q20 bases: 1882628091(99.5186%)
+Q30 bases: 1851980073(97.8985%)
+
+Read1 after filtering:
+total reads: 16514550
+total bases: 1889895499
+Q20 bases: 1881246032(99.5423%)
+Q30 bases: 1850908689(97.9371%)
+
+Filtering result:
+reads passed filter: 16514550
+reads failed due to low quality: 7500
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 73.9783%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue6_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue6_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue6_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue6_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue6_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue6_fastp_report.json 
+fastp v0.23.2, time used: 31 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue6_qc1.fastq.gz
+[DONE] Sample complete: Tissue6
+============================================================
+[SAMPLE] Tissue5
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue5A
+[B_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue5B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue5_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 18457346
+total bases: 2079550258
+Q20 bases: 2072562144(99.664%)
+Q30 bases: 2048474640(98.5057%)
+
+Read1 after filtering:
+total reads: 18450916
+total bases: 2078002877
+Q20 bases: 2071393874(99.682%)
+Q30 bases: 2047535607(98.5338%)
+
+Filtering result:
+reads passed filter: 18450916
+reads failed due to low quality: 6430
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 77.0133%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue5_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue5_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue5_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue5_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue5_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue5_fastp_report.json 
+fastp v0.23.2, time used: 35 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue5_qc1.fastq.gz
+[DONE] Sample complete: Tissue5
+============================================================
+[SAMPLE] Tissue7
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue7A
+[B_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue7B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue7_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 18547611
+total bases: 2207685828
+Q20 bases: 2196744387(99.5044%)
+Q30 bases: 2159919730(97.8364%)
+
+Read1 after filtering:
+total reads: 18540305
+total bases: 2205887444
+Q20 bases: 2195392448(99.5242%)
+Q30 bases: 2158856526(97.8679%)
+
+Filtering result:
+reads passed filter: 18540305
+reads failed due to low quality: 7306
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 75.1613%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue7_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue7_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue7_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue7_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue7_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue7_fastp_report.json 
+fastp v0.23.2, time used: 37 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue7_qc1.fastq.gz
+[DONE] Sample complete: Tissue7
+============================================================
+[SAMPLE] Tissue8
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue8A
+[B_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue8B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue8_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 19578877
+total bases: 2249048583
+Q20 bases: 2238246491(99.5197%)
+Q30 bases: 2204223730(98.0069%)
+
+Read1 after filtering:
+total reads: 19571494
+total bases: 2247265153
+Q20 bases: 2236885338(99.5381%)
+Q30 bases: 2203172453(98.0379%)
+
+Filtering result:
+reads passed filter: 19571494
+reads failed due to low quality: 7383
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 73.4904%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue8_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue8_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue8_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue8_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue8_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue8_fastp_report.json 
+fastp v0.23.2, time used: 40 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue8_qc1.fastq.gz
+[DONE] Sample complete: Tissue8
+============================================================
+[SAMPLE] Tissue2
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue2A
+[B_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue2B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue2_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 19546954
+total bases: 2310732694
+Q20 bases: 2301887593(99.6172%)
+Q30 bases: 2271270665(98.2922%)
+
+Read1 after filtering:
+total reads: 19539813
+total bases: 2309004791
+Q20 bases: 2300581984(99.6352%)
+Q30 bases: 2270223385(98.3204%)
+
+Filtering result:
+reads passed filter: 19539813
+reads failed due to low quality: 7141
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 77.491%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue2_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue2_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue2_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue2_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue2_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue2_fastp_report.json 
+fastp v0.23.2, time used: 47 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue2_qc1.fastq.gz
+[DONE] Sample complete: Tissue2
+============================================================
+[SAMPLE] Tissue11
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue11A
+[B_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue11B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue11_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 14433067
+total bases: 1774230943
+Q20 bases: 1766562959(99.5678%)
+Q30 bases: 1739873783(98.0635%)
+
+Read1 after filtering:
+total reads: 14427552
+total bases: 1772868209
+Q20 bases: 1765537034(99.5865%)
+Q30 bases: 1739074780(98.0939%)
+
+Filtering result:
+reads passed filter: 14427552
+reads failed due to low quality: 5515
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 80.565%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue11_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue11_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue11_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue11_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue11_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue11_fastp_report.json 
+fastp v0.23.2, time used: 29 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue11_qc1.fastq.gz
+[DONE] Sample complete: Tissue11
+============================================================
+[SAMPLE] Tissue9
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue9A
+[B_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue9B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue9_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 19167574
+total bases: 2066229064
+Q20 bases: 2057035891(99.5551%)
+Q30 bases: 2027596474(98.1303%)
+
+Read1 after filtering:
+total reads: 19160961
+total bases: 2064599541
+Q20 bases: 2055810737(99.5743%)
+Q30 bases: 2026670102(98.1629%)
+
+Filtering result:
+reads passed filter: 19160961
+reads failed due to low quality: 6613
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 72.992%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue9_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue9_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue9_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue9_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue9_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue9_fastp_report.json 
+fastp v0.23.2, time used: 35 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue9_qc1.fastq.gz
+[DONE] Sample complete: Tissue9
+============================================================
+[SAMPLE] Tissue13
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue13A
+[B_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue13B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue13_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 15755110
+total bases: 1954532322
+Q20 bases: 1946552665(99.5917%)
+Q30 bases: 1919482741(98.2068%)
+
+Read1 after filtering:
+total reads: 15746932
+total bases: 1952611108
+Q20 bases: 1945089616(99.6148%)
+Q30 bases: 1918278154(98.2417%)
+
+Filtering result:
+reads passed filter: 15746932
+reads failed due to low quality: 8178
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 73.9825%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue13_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue13_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue13_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue13_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue13_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue13_fastp_report.json 
+fastp v0.23.2, time used: 33 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue13_qc1.fastq.gz
+[DONE] Sample complete: Tissue13
+============================================================
+[SAMPLE] Tissue12
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue12A
+[B_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue12B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue12_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 18210954
+total bases: 2218745015
+Q20 bases: 2210341656(99.6213%)
+Q30 bases: 2181452842(98.3192%)
+
+Read1 after filtering:
+total reads: 18204090
+total bases: 2217060206
+Q20 bases: 2209078226(99.64%)
+Q30 bases: 2180487584(98.3504%)
+
+Filtering result:
+reads passed filter: 18204090
+reads failed due to low quality: 6864
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 75.5015%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue12_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue12_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue12_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue12_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue12_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue12_fastp_report.json 
+fastp v0.23.2, time used: 39 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue12_qc1.fastq.gz
+[DONE] Sample complete: Tissue12
+============================================================
+[SAMPLE] Tissue10
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue10A
+[B_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue10B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue10_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 21678449
+total bases: 2023027541
+Q20 bases: 2014762310(99.5914%)
+Q30 bases: 1990501006(98.3922%)
+
+Read1 after filtering:
+total reads: 21672923
+total bases: 2021635375
+Q20 bases: 2013723958(99.6087%)
+Q30 bases: 1989732190(98.4219%)
+
+Filtering result:
+reads passed filter: 21672923
+reads failed due to low quality: 5526
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 72.6988%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue10_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue10_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue10_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue10_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue10_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue10_fastp_report.json 
+fastp v0.23.2, time used: 45 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue10_qc1.fastq.gz
+[DONE] Sample complete: Tissue10
+============================================================
+[SAMPLE] Tissue18
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue18A
+[B_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue18B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue18_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 12449232
+total bases: 1475029513
+Q20 bases: 1469451414(99.6218%)
+Q30 bases: 1450359138(98.3275%)
+
+Read1 after filtering:
+total reads: 12444803
+total bases: 1473968390
+Q20 bases: 1468642238(99.6387%)
+Q30 bases: 1449708141(98.3541%)
+
+Filtering result:
+reads passed filter: 12444803
+reads failed due to low quality: 4429
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 78.9997%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue18_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue18_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue18_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue18_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue18_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue18_fastp_report.json 
+fastp v0.23.2, time used: 25 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue18_qc1.fastq.gz
+[DONE] Sample complete: Tissue18
+============================================================
+[SAMPLE] Tissue14
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue14A
+[B_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue14B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue14_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 16840786
+total bases: 2058766687
+Q20 bases: 2049434538(99.5467%)
+Q30 bases: 2018702539(98.054%)
+
+Read1 after filtering:
+total reads: 16832567
+total bases: 2056696636
+Q20 bases: 2047898510(99.5722%)
+Q30 bases: 2017522253(98.0953%)
+
+Filtering result:
+reads passed filter: 16832567
+reads failed due to low quality: 8219
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 76.56%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue14_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue14_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue14_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue14_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue14_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue14_fastp_report.json 
+fastp v0.23.2, time used: 33 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue14_qc1.fastq.gz
+[DONE] Sample complete: Tissue14
+============================================================
+[SAMPLE] Tissue17
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue17A
+[B_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue17B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue17_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 17358818
+total bases: 1852305396
+Q20 bases: 1844241786(99.5647%)
+Q30 bases: 1819830287(98.2468%)
+
+Read1 after filtering:
+total reads: 17354300
+total bases: 1851175702
+Q20 bases: 1843389284(99.5794%)
+Q30 bases: 1819184283(98.2718%)
+
+Filtering result:
+reads passed filter: 17354300
+reads failed due to low quality: 4518
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 78.4214%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue17_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue17_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue17_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue17_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue17_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue17_fastp_report.json 
+fastp v0.23.2, time used: 35 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue17_qc1.fastq.gz
+[DONE] Sample complete: Tissue17
+============================================================
+[SAMPLE] Tissue16
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue16A
+[B_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue16B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue16_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 19851732
+total bases: 2230306806
+Q20 bases: 2222857999(99.666%)
+Q30 bases: 2197187251(98.515%)
+
+Read1 after filtering:
+total reads: 19844889
+total bases: 2228625345
+Q20 bases: 2221594322(99.6845%)
+Q30 bases: 2196192295(98.5447%)
+
+Filtering result:
+reads passed filter: 19844889
+reads failed due to low quality: 6843
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 76.2123%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue16_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue16_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue16_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue16_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue16_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue16_fastp_report.json 
+fastp v0.23.2, time used: 37 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue16_qc1.fastq.gz
+[DONE] Sample complete: Tissue16
+============================================================
+[SAMPLE] Tissue19
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue19A
+[B_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue19B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue19_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 18245245
+total bases: 2133721120
+Q20 bases: 2123767097(99.5335%)
+Q30 bases: 2091327531(98.0132%)
+
+Read1 after filtering:
+total reads: 18235761
+total bases: 2131408598
+Q20 bases: 2122020701(99.5595%)
+Q30 bases: 2089950471(98.0549%)
+
+Filtering result:
+reads passed filter: 18235761
+reads failed due to low quality: 9484
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 78.0771%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue19_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue19_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue19_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue19_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue19_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue19_fastp_report.json 
+fastp v0.23.2, time used: 38 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue19_qc1.fastq.gz
+[DONE] Sample complete: Tissue19
+============================================================
+[SAMPLE] Tissue20
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue20A
+[B_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue20B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue20_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 17052281
+total bases: 1864796410
+Q20 bases: 1855912747(99.5236%)
+Q30 bases: 1827380420(97.9936%)
+
+Read1 after filtering:
+total reads: 17047267
+total bases: 1863540091
+Q20 bases: 1854968037(99.54%)
+Q30 bases: 1826671867(98.0216%)
+
+Filtering result:
+reads passed filter: 17047267
+reads failed due to low quality: 5014
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 73.266%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue20_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue20_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue20_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue20_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue20_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue20_fastp_report.json 
+fastp v0.23.2, time used: 32 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue20_qc1.fastq.gz
+[DONE] Sample complete: Tissue20
+============================================================
+[SAMPLE] Tissue21
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue21A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue21B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue21_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 16986110
+total bases: 2137534720
+Q20 bases: 2124367205(99.384%)
+Q30 bases: 2099256875(98.2093%)
+
+Read1 after filtering:
+total reads: 16967848
+total bases: 2133389108
+Q20 bases: 2121231251(99.4301%)
+Q30 bases: 2096594216(98.2753%)
+
+Filtering result:
+reads passed filter: 16967848
+reads failed due to low quality: 18262
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 79.8935%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue21_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue21_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue21_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue21_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue21_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue21_fastp_report.json 
+fastp v0.23.2, time used: 33 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue21_qc1.fastq.gz
+[DONE] Sample complete: Tissue21
+============================================================
+[SAMPLE] Tissue22
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue22A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue22B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue22_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 17310548
+total bases: 2090235375
+Q20 bases: 2078538669(99.4404%)
+Q30 bases: 2055397097(98.3333%)
+
+Read1 after filtering:
+total reads: 17297815
+total bases: 2087378555
+Q20 bases: 2076370998(99.4727%)
+Q30 bases: 2053594676(98.3815%)
+
+Filtering result:
+reads passed filter: 17297815
+reads failed due to low quality: 12733
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 77.4378%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue22_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue22_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue22_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue22_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue22_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue22_fastp_report.json 
+fastp v0.23.2, time used: 37 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue22_qc1.fastq.gz
+[DONE] Sample complete: Tissue22
+============================================================
+[SAMPLE] Tissue23
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue23A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue23B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue23_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 16674527
+total bases: 2181065588
+Q20 bases: 2167372193(99.3722%)
+Q30 bases: 2140867050(98.1569%)
+
+Read1 after filtering:
+total reads: 16659361
+total bases: 2177592331
+Q20 bases: 2164740873(99.4098%)
+Q30 bases: 2138665070(98.2124%)
+
+Filtering result:
+reads passed filter: 16659361
+reads failed due to low quality: 15166
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 80.4757%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue23_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue23_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue23_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue23_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue23_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue23_fastp_report.json 
+fastp v0.23.2, time used: 35 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue23_qc1.fastq.gz
+[DONE] Sample complete: Tissue23
+============================================================
+[SAMPLE] Tissue24
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue24A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue24B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue24_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 18607806
+total bases: 2423225589
+Q20 bases: 2409985005(99.4536%)
+Q30 bases: 2383845235(98.3749%)
+
+Read1 after filtering:
+total reads: 18593382
+total bases: 2420004809
+Q20 bases: 2407545855(99.4852%)
+Q30 bases: 2381779318(98.4204%)
+
+Filtering result:
+reads passed filter: 18593382
+reads failed due to low quality: 14424
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 80.282%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue24_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue24_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue24_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue24_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue24_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue24_fastp_report.json 
+fastp v0.23.2, time used: 39 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue24_qc1.fastq.gz
+[DONE] Sample complete: Tissue24
+============================================================
+[SAMPLE] Tissue25
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue25A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue25B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue25_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 16863030
+total bases: 2161302030
+Q20 bases: 2149062914(99.4337%)
+Q30 bases: 2124743131(98.3085%)
+
+Read1 after filtering:
+total reads: 16850482
+total bases: 2158497091
+Q20 bases: 2146940306(99.4646%)
+Q30 bases: 2122959490(98.3536%)
+
+Filtering result:
+reads passed filter: 16850482
+reads failed due to low quality: 12548
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 78.2578%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue25_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue25_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue25_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue25_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue25_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue25_fastp_report.json 
+fastp v0.23.2, time used: 32 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue25_qc1.fastq.gz
+[DONE] Sample complete: Tissue25
+============================================================
+[SAMPLE] Tissue27
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue27A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue27B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue27_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 19242958
+total bases: 2051769032
+Q20 bases: 2040992800(99.4748%)
+Q30 bases: 2019282510(98.4167%)
+
+Read1 after filtering:
+total reads: 19232052
+total bases: 2049367077
+Q20 bases: 2039174053(99.5026%)
+Q30 bases: 2017790263(98.4592%)
+
+Filtering result:
+reads passed filter: 19232052
+reads failed due to low quality: 10906
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 77.8394%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue27_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue27_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue27_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue27_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue27_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue27_fastp_report.json 
+fastp v0.23.2, time used: 36 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue27_qc1.fastq.gz
+[DONE] Sample complete: Tissue27
+============================================================
+[SAMPLE] Tissue29
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue29A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue29B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue29_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 14435101
+total bases: 1873914946
+Q20 bases: 1860586329(99.2887%)
+Q30 bases: 1832618218(97.7962%)
+
+Read1 after filtering:
+total reads: 14417844
+total bases: 1869922535
+Q20 bases: 1857564613(99.3391%)
+Q30 bases: 1830095301(97.8701%)
+
+Filtering result:
+reads passed filter: 14417844
+reads failed due to low quality: 17257
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 76.729%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue29_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue29_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue29_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue29_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue29_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue29_fastp_report.json 
+fastp v0.23.2, time used: 30 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue29_qc1.fastq.gz
+[DONE] Sample complete: Tissue29
+============================================================
+[SAMPLE] Tissue28
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue28A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue28B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue28_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 16845384
+total bases: 2198733006
+Q20 bases: 2182831510(99.2768%)
+Q30 bases: 2153633241(97.9488%)
+
+Read1 after filtering:
+total reads: 16826058
+total bases: 2194286185
+Q20 bases: 2179451171(99.3239%)
+Q30 bases: 2150803880(98.0184%)
+
+Filtering result:
+reads passed filter: 16826058
+reads failed due to low quality: 19326
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 79.0399%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue28_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue28_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue28_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue28_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue28_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue28_fastp_report.json 
+fastp v0.23.2, time used: 37 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue28_qc1.fastq.gz
+[DONE] Sample complete: Tissue28
+============================================================
+[SAMPLE] Tissue30
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue30A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue30B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue30_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 19310475
+total bases: 1831180533
+Q20 bases: 1818868048(99.3276%)
+Q30 bases: 1791341780(97.8244%)
+
+Read1 after filtering:
+total reads: 19301629
+total bases: 1829260226
+Q20 bases: 1817423264(99.3529%)
+Q30 bases: 1790163719(97.8627%)
+
+Filtering result:
+reads passed filter: 19301629
+reads failed due to low quality: 8846
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 67.4844%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue30_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue30_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue30_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue30_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue30_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue30_fastp_report.json 
+fastp v0.23.2, time used: 32 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue30_qc1.fastq.gz
+[DONE] Sample complete: Tissue30
+============================================================
+[SAMPLE] Tissue31
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue31A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue31B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue31_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 16852293
+total bases: 2182187499
+Q20 bases: 2167645148(99.3336%)
+Q30 bases: 2137617162(97.9575%)
+
+Read1 after filtering:
+total reads: 16833973
+total bases: 2177975938
+Q20 bases: 2164448012(99.3789%)
+Q30 bases: 2134947140(98.0244%)
+
+Filtering result:
+reads passed filter: 16833973
+reads failed due to low quality: 18320
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 80.7288%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue31_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue31_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue31_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue31_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue31_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue31_fastp_report.json 
+fastp v0.23.2, time used: 35 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue31_qc1.fastq.gz
+[DONE] Sample complete: Tissue31
+============================================================
+[SAMPLE] Tissue33
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue33A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue33B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue33_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 17068964
+total bases: 2239038790
+Q20 bases: 2227509216(99.4851%)
+Q30 bases: 2203947470(98.4328%)
+
+Read1 after filtering:
+total reads: 17057216
+total bases: 2236437873
+Q20 bases: 2225530885(99.5123%)
+Q30 bases: 2202285088(98.4729%)
+
+Filtering result:
+reads passed filter: 17057216
+reads failed due to low quality: 11748
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 80.0755%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue33_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue33_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue33_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue33_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue33_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue33_fastp_report.json 
+fastp v0.23.2, time used: 35 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue33_qc1.fastq.gz
+[DONE] Sample complete: Tissue33
+============================================================
+[SAMPLE] Tissue32
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue32A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue32B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue32_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 18888379
+total bases: 1802360715
+Q20 bases: 1792266783(99.44%)
+Q30 bases: 1773318697(98.3887%)
+
+Read1 after filtering:
+total reads: 18875074
+total bases: 1799195200
+Q20 bases: 1789876237(99.482%)
+Q30 bases: 1771381095(98.4541%)
+
+Filtering result:
+reads passed filter: 18875074
+reads failed due to low quality: 13305
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 74.4732%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue32_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue32_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue32_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue32_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue32_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue32_fastp_report.json 
+fastp v0.23.2, time used: 33 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue32_qc1.fastq.gz
+[DONE] Sample complete: Tissue32
+============================================================
+[SAMPLE] Tissue34
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue34A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue34B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue34_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 19486465
+total bases: 2202382064
+Q20 bases: 2192060861(99.5314%)
+Q30 bases: 2169210412(98.4938%)
+
+Read1 after filtering:
+total reads: 19476225
+total bases: 2200073221
+Q20 bases: 2190312190(99.5563%)
+Q30 bases: 2167781800(98.5323%)
+
+Filtering result:
+reads passed filter: 19476225
+reads failed due to low quality: 10240
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 80.5007%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue34_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue34_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue34_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue34_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue34_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue34_fastp_report.json 
+fastp v0.23.2, time used: 39 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue34_qc1.fastq.gz
+[DONE] Sample complete: Tissue34
+============================================================
+[SAMPLE] Tissue35
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue35A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue35B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue35_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 18699394
+total bases: 2178866024
+Q20 bases: 2168632250(99.5303%)
+Q30 bases: 2147377775(98.5548%)
+
+Read1 after filtering:
+total reads: 18688811
+total bases: 2176525433
+Q20 bases: 2166858468(99.5559%)
+Q30 bases: 2145891403(98.5925%)
+
+Filtering result:
+reads passed filter: 18688811
+reads failed due to low quality: 10583
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 74.0559%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue35_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue35_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue35_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue35_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue35_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue35_fastp_report.json 
+fastp v0.23.2, time used: 44 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue35_qc1.fastq.gz
+[DONE] Sample complete: Tissue35
+============================================================
+[SAMPLE] Tissue37
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue37A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue37B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue37_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 14647756
+total bases: 1893794509
+Q20 bases: 1883883043(99.4766%)
+Q30 bases: 1861523248(98.2959%)
+
+Read1 after filtering:
+total reads: 14634348
+total bases: 1890804399
+Q20 bases: 1881617323(99.5141%)
+Q30 bases: 1859598295(98.3496%)
+
+Filtering result:
+reads passed filter: 14634348
+reads failed due to low quality: 13408
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 79.2145%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue37_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue37_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue37_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue37_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue37_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue37_fastp_report.json 
+fastp v0.23.2, time used: 31 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue37_qc1.fastq.gz
+[DONE] Sample complete: Tissue37
+============================================================
+[SAMPLE] Tissue39
+[A_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue39A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue39B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue39_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 15845028
+total bases: 2095120366
+Q20 bases: 2082224042(99.3845%)
+Q30 bases: 2058202839(98.2379%)
+
+Read1 after filtering:
+total reads: 15828148
+total bases: 2091399834
+Q20 bases: 2079407041(99.4266%)
+Q30 bases: 2055815429(98.2985%)
+
+Filtering result:
+reads passed filter: 15828148
+reads failed due to low quality: 16880
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 79.2776%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue39_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue39_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue39_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue39_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue39_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue39_fastp_report.json 
+fastp v0.23.2, time used: 33 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue39_qc1.fastq.gz
+[DONE] Sample complete: Tissue39
+============================================================
+[SAMPLE] Tissue38
+[A_DIR]  Sample_JZ26287787-Lib20261022Expression-tube1-LibTissue38A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue38B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue38_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 15846342
+total bases: 2100284695
+Q20 bases: 2089410302(99.4822%)
+Q30 bases: 2066312917(98.3825%)
+
+Read1 after filtering:
+total reads: 15834767
+total bases: 2097712134
+Q20 bases: 2087461043(99.5113%)
+Q30 bases: 2064682352(98.4254%)
+
+Filtering result:
+reads passed filter: 15834767
+reads failed due to low quality: 11575
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 81.8137%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue38_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue38_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue38_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue38_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue38_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue38_fastp_report.json 
+fastp v0.23.2, time used: 33 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue38_qc1.fastq.gz
+[DONE] Sample complete: Tissue38
+============================================================
+[SAMPLE] Tissue40
+[A_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue40A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue40B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue40_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 15192479
+total bases: 1946334510
+Q20 bases: 1934371032(99.3853%)
+Q30 bases: 1912632284(98.2684%)
+
+Read1 after filtering:
+total reads: 15176730
+total bases: 1942819904
+Q20 bases: 1931708944(99.4281%)
+Q30 bases: 1910383354(98.3304%)
+
+Filtering result:
+reads passed filter: 15176730
+reads failed due to low quality: 15749
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 78.2624%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue40_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue40_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue40_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue40_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue40_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue40_fastp_report.json 
+fastp v0.23.2, time used: 34 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue40_qc1.fastq.gz
+[DONE] Sample complete: Tissue40
+============================================================
+[SAMPLE] Tissue42
+[A_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue42A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue42B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue42_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 14752931
+total bases: 1582465359
+Q20 bases: 1568560538(99.1213%)
+Q30 bases: 1542888532(97.499%)
+
+Read1 after filtering:
+total reads: 14736911
+total bases: 1578972111
+Q20 bases: 1565914113(99.173%)
+Q30 bases: 1540712946(97.577%)
+
+Filtering result:
+reads passed filter: 14736911
+reads failed due to low quality: 16020
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 70.2775%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue42_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue42_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue42_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue42_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue42_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue42_fastp_report.json 
+fastp v0.23.2, time used: 27 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue42_qc1.fastq.gz
+[DONE] Sample complete: Tissue42
+============================================================
+[SAMPLE] Tissue43
+[A_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue43A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue43B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue43_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 15537896
+total bases: 2014188941
+Q20 bases: 2000374538(99.3141%)
+Q30 bases: 1975179889(98.0633%)
+
+Read1 after filtering:
+total reads: 15522442
+total bases: 2010748916
+Q20 bases: 1997761619(99.3541%)
+Q30 bases: 1972988749(98.1221%)
+
+Filtering result:
+reads passed filter: 15522442
+reads failed due to low quality: 15454
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 79.887%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue43_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue43_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue43_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue43_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue43_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue43_fastp_report.json 
+fastp v0.23.2, time used: 33 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue43_qc1.fastq.gz
+[DONE] Sample complete: Tissue43
+============================================================
+[SAMPLE] Tissue44
+[A_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue44A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue44B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue44_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 16131360
+total bases: 2061222360
+Q20 bases: 2047708032(99.3444%)
+Q30 bases: 2022824420(98.1371%)
+
+Read1 after filtering:
+total reads: 16115286
+total bases: 2057461103
+Q20 bases: 2044861293(99.3876%)
+Q30 bases: 2020457790(98.2015%)
+
+Filtering result:
+reads passed filter: 16115286
+reads failed due to low quality: 16074
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 77.546%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue44_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue44_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue44_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue44_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue44_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue44_fastp_report.json 
+fastp v0.23.2, time used: 33 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue44_qc1.fastq.gz
+[DONE] Sample complete: Tissue44
+============================================================
+[SAMPLE] Tissue45
+[A_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue45A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue45B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue45_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 18970400
+total bases: 2023975549
+Q20 bases: 2014318512(99.5229%)
+Q30 bases: 1995947637(98.6152%)
+
+Read1 after filtering:
+total reads: 18959231
+total bases: 2021303813
+Q20 bases: 2012320518(99.5556%)
+Q30 bases: 1994292865(98.6637%)
+
+Filtering result:
+reads passed filter: 18959231
+reads failed due to low quality: 11169
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 71.8776%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue45_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue45_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue45_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue45_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue45_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue45_fastp_report.json 
+fastp v0.23.2, time used: 37 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue45_qc1.fastq.gz
+[DONE] Sample complete: Tissue45
+============================================================
+[SAMPLE] Tissue47
+[A_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue47A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue47B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue47_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 13041204
+total bases: 1772721229
+Q20 bases: 1762078093(99.3996%)
+Q30 bases: 1741035289(98.2126%)
+
+Read1 after filtering:
+total reads: 13029121
+total bases: 1769946770
+Q20 bases: 1759978331(99.4368%)
+Q30 bases: 1739275592(98.2671%)
+
+Filtering result:
+reads passed filter: 13029121
+reads failed due to low quality: 12083
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 79.5533%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue47_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue47_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue47_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue47_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue47_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue47_fastp_report.json 
+fastp v0.23.2, time used: 29 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue47_qc1.fastq.gz
+[DONE] Sample complete: Tissue47
+============================================================
+[SAMPLE] Tissue46
+[A_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue46A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue46B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue46_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 17452115
+total bases: 2071875931
+Q20 bases: 2059154426(99.386%)
+Q30 bases: 2036191936(98.2777%)
+
+Read1 after filtering:
+total reads: 17435295
+total bases: 2067880817
+Q20 bases: 2056150063(99.4327%)
+Q30 bases: 2033710095(98.3475%)
+
+Filtering result:
+reads passed filter: 17435295
+reads failed due to low quality: 16820
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 73.3395%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue46_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue46_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue46_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue46_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue46_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue46_fastp_report.json 
+fastp v0.23.2, time used: 39 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue46_qc1.fastq.gz
+[DONE] Sample complete: Tissue46
+============================================================
+[SAMPLE] Tissue51
+[A_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue51A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue51B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue51_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 11668770
+total bases: 1593661876
+Q20 bases: 1581386433(99.2297%)
+Q30 bases: 1558075116(97.767%)
+
+Read1 after filtering:
+total reads: 11652190
+total bases: 1589892388
+Q20 bases: 1578525326(99.285%)
+Q30 bases: 1555673704(97.8477%)
+
+Filtering result:
+reads passed filter: 11652190
+reads failed due to low quality: 16580
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 84.4104%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue51_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue51_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue51_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue51_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue51_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue51_fastp_report.json 
+fastp v0.23.2, time used: 25 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue51_qc1.fastq.gz
+[DONE] Sample complete: Tissue51
+============================================================
+[SAMPLE] Tissue48
+[A_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue48A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue48B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue48_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 22029648
+total bases: 2291100871
+Q20 bases: 2278916191(99.4682%)
+Q30 bases: 2254652473(98.4091%)
+
+Read1 after filtering:
+total reads: 22015251
+total bases: 2287628299
+Q20 bases: 2276307822(99.5051%)
+Q30 bases: 2252513441(98.465%)
+
+Filtering result:
+reads passed filter: 22015251
+reads failed due to low quality: 14397
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 70.7518%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue48_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue48_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue48_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue48_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue48_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue48_fastp_report.json 
+fastp v0.23.2, time used: 41 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue48_qc1.fastq.gz
+[DONE] Sample complete: Tissue48
+============================================================
+[SAMPLE] Tissue49
+[A_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue49A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue49B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue49_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 15596890
+total bases: 2146092329
+Q20 bases: 2131697832(99.3293%)
+Q30 bases: 2103773002(98.0281%)
+
+Read1 after filtering:
+total reads: 15580042
+total bases: 2142313211
+Q20 bases: 2128831760(99.3707%)
+Q30 bases: 2101363073(98.0885%)
+
+Filtering result:
+reads passed filter: 15580042
+reads failed due to low quality: 16848
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 83.1065%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue49_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue49_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue49_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue49_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue49_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue49_fastp_report.json 
+fastp v0.23.2, time used: 35 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue49_qc1.fastq.gz
+[DONE] Sample complete: Tissue49
+============================================================
+[SAMPLE] TissueB1@
+[A_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissueB1@A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissueB1@B
+============================================================
+[SKIP] A+B merge already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/TissueB1@_A_B_merged.fastq.gz
+[SKIP] fastp already exists: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/TissueB1@_qc1.fastq.gz
+[DONE] Sample complete: TissueB1@
+============================================================
+[SAMPLE] Tissue52
+[A_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue52A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue52B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue52_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 15797109
+total bases: 2208860355
+Q20 bases: 2189142159(99.1073%)
+Q30 bases: 2154697309(97.5479%)
+
+Read1 after filtering:
+total reads: 15769597
+total bases: 2202283062
+Q20 bases: 2184167398(99.1774%)
+Q30 bases: 2150581744(97.6524%)
+
+Filtering result:
+reads passed filter: 15769597
+reads failed due to low quality: 27512
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 84.6975%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue52_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue52_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue52_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue52_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue52_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue52_fastp_report.json 
+fastp v0.23.2, time used: 33 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue52_qc1.fastq.gz
+[DONE] Sample complete: Tissue52
+============================================================
+[SAMPLE] Tissue61
+[A_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue61A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue61B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue61_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 16388047
+total bases: 2098941656
+Q20 bases: 2083185392(99.2493%)
+Q30 bases: 2053965182(97.8572%)
+
+Read1 after filtering:
+total reads: 16358559
+total bases: 2091900313
+Q20 bases: 2077966902(99.3339%)
+Q30 bases: 2049771535(97.9861%)
+
+Filtering result:
+reads passed filter: 16358559
+reads failed due to low quality: 29488
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 68.9277%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue61_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue61_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue61_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue61_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue61_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue61_fastp_report.json 
+fastp v0.23.2, time used: 36 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue61_qc1.fastq.gz
+[DONE] Sample complete: Tissue61
+============================================================
+[SAMPLE] Tissue62
+[A_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue62A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue62B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue62_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 16666036
+total bases: 2087019009
+Q20 bases: 2071567342(99.2596%)
+Q30 bases: 2041649846(97.8261%)
+
+Read1 after filtering:
+total reads: 16641862
+total bases: 2081366076
+Q20 bases: 2067344575(99.3263%)
+Q30 bases: 2038185752(97.9254%)
+
+Filtering result:
+reads passed filter: 16641862
+reads failed due to low quality: 24174
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 69.482%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue62_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue62_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue62_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue62_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue62_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue62_fastp_report.json 
+fastp v0.23.2, time used: 34 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue62_qc1.fastq.gz
+[DONE] Sample complete: Tissue62
+============================================================
+[SAMPLE] Tissue67
+[A_DIR]  Sample_JZ26287788-Lib20261022Expression-tube2-LibTissue67A
+[B_DIR]  Sample_JZ26287789-Lib20261022Expression-tube3-LibTissue67B
+============================================================
+[DONE] A+B merged: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue67_A_B_merged.fastq.gz
+WARNING: fastp uses up to 16 threads although you specified 20
+Read1 before filtering:
+total reads: 16295308
+total bases: 2047529571
+Q20 bases: 2027027563(98.9987%)
+Q30 bases: 1988992349(97.1411%)
+
+Read1 after filtering:
+total reads: 16265529
+total bases: 2040479561
+Q20 bases: 2021724443(99.0808%)
+Q30 bases: 1984570134(97.26%)
+
+Filtering result:
+reads passed filter: 16265529
+reads failed due to low quality: 29779
+reads failed due to too many N: 0
+reads failed due to too short: 0
+reads failed due to too long: 0
+
+Duplication rate (may be overestimated since this is SE data): 60.4177%
+
+JSON report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue67_fastp_report.json
+HTML report: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue67_fastp_report.html
+
+fastp -i /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB/Tissue67_A_B_merged.fastq.gz -o /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue67_qc1.fastq.gz -w 20 --qualified_quality_phred 20 --unqualified_percent_limit 20 --length_required 30 --length_limit 604 --disable_adapter_trimming -h /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue67_fastp_report.html -j /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue67_fastp_report.json 
+fastp v0.23.2, time used: 34 seconds
+[DONE] fastp: /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue67_qc1.fastq.gz
+[DONE] Sample complete: Tissue67
+============================================================
+Preprocessing done.
+PEAR   : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/01_pear
+A+B    : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/02_merge_AB
+fastp  : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp
+============================================================
+======================================================================
+Primer Excel      : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/code/20250520_126_plex.xlsx
+Primer SHA256     : 950e89957b19c2f67e9b3b2fff2f3b35ce841ca6b9550fc1f501c0a624e2e6ea
+Targets           : 126
+Search sequences  : 252
+Enabled samples   : 56
+Anchor RC         : CTTGCAC
+======================================================================
+[SKIP] Tissue1: existing non-empty count results found
+[SKIP] Tissue15: existing non-empty count results found
+[SKIP] Tissue26: existing non-empty count results found
+[SKIP] Tissue41: existing non-empty count results found
+[SKIP] Tissue50: existing non-empty count results found
+[SKIP] Tissue80: existing non-empty count results found
+[SKIP] Tissue81: existing non-empty count results found
+[SKIP] TissueC2@2: existing non-empty count results found
+======================================================================
+[COUNT] Sample: Tissue2
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue2_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue2: processed 1,000,000 reads
+[COUNT] Tissue2: processed 2,000,000 reads
+[COUNT] Tissue2: processed 3,000,000 reads
+[COUNT] Tissue2: processed 4,000,000 reads
+[COUNT] Tissue2: processed 5,000,000 reads
+[COUNT] Tissue2: processed 6,000,000 reads
+[COUNT] Tissue2: processed 7,000,000 reads
+[COUNT] Tissue2: processed 8,000,000 reads
+[COUNT] Tissue2: processed 9,000,000 reads
+[COUNT] Tissue2: processed 10,000,000 reads
+[COUNT] Tissue2: processed 11,000,000 reads
+[COUNT] Tissue2: processed 12,000,000 reads
+[COUNT] Tissue2: processed 13,000,000 reads
+[COUNT] Tissue2: processed 14,000,000 reads
+[COUNT] Tissue2: processed 15,000,000 reads
+[COUNT] Tissue2: processed 16,000,000 reads
+[COUNT] Tissue2: processed 17,000,000 reads
+[COUNT] Tissue2: processed 18,000,000 reads
+[COUNT] Tissue2: processed 19,000,000 reads
+[DONE] Tissue2: total_reads=19,539,813
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue2/sum_onTargetRate_Tissue2.csv
+======================================================================
+[COUNT] Sample: Tissue5
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue5_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue5: processed 1,000,000 reads
+[COUNT] Tissue5: processed 2,000,000 reads
+[COUNT] Tissue5: processed 3,000,000 reads
+[COUNT] Tissue5: processed 4,000,000 reads
+[COUNT] Tissue5: processed 5,000,000 reads
+[COUNT] Tissue5: processed 6,000,000 reads
+[COUNT] Tissue5: processed 7,000,000 reads
+[COUNT] Tissue5: processed 8,000,000 reads
+[COUNT] Tissue5: processed 9,000,000 reads
+[COUNT] Tissue5: processed 10,000,000 reads
+[COUNT] Tissue5: processed 11,000,000 reads
+[COUNT] Tissue5: processed 12,000,000 reads
+[COUNT] Tissue5: processed 13,000,000 reads
+[COUNT] Tissue5: processed 14,000,000 reads
+[COUNT] Tissue5: processed 15,000,000 reads
+[COUNT] Tissue5: processed 16,000,000 reads
+[COUNT] Tissue5: processed 17,000,000 reads
+[COUNT] Tissue5: processed 18,000,000 reads
+[DONE] Tissue5: total_reads=18,450,916
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue5/sum_onTargetRate_Tissue5.csv
+======================================================================
+[COUNT] Sample: Tissue6
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue6_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue6: processed 1,000,000 reads
+[COUNT] Tissue6: processed 2,000,000 reads
+[COUNT] Tissue6: processed 3,000,000 reads
+[COUNT] Tissue6: processed 4,000,000 reads
+[COUNT] Tissue6: processed 5,000,000 reads
+[COUNT] Tissue6: processed 6,000,000 reads
+[COUNT] Tissue6: processed 7,000,000 reads
+[COUNT] Tissue6: processed 8,000,000 reads
+[COUNT] Tissue6: processed 9,000,000 reads
+[COUNT] Tissue6: processed 10,000,000 reads
+[COUNT] Tissue6: processed 11,000,000 reads
+[COUNT] Tissue6: processed 12,000,000 reads
+[COUNT] Tissue6: processed 13,000,000 reads
+[COUNT] Tissue6: processed 14,000,000 reads
+[COUNT] Tissue6: processed 15,000,000 reads
+[COUNT] Tissue6: processed 16,000,000 reads
+[DONE] Tissue6: total_reads=16,514,550
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue6/sum_onTargetRate_Tissue6.csv
+======================================================================
+[COUNT] Sample: Tissue7
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue7_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue7: processed 1,000,000 reads
+[COUNT] Tissue7: processed 2,000,000 reads
+[COUNT] Tissue7: processed 3,000,000 reads
+[COUNT] Tissue7: processed 4,000,000 reads
+[COUNT] Tissue7: processed 5,000,000 reads
+[COUNT] Tissue7: processed 6,000,000 reads
+[COUNT] Tissue7: processed 7,000,000 reads
+[COUNT] Tissue7: processed 8,000,000 reads
+[COUNT] Tissue7: processed 9,000,000 reads
+[COUNT] Tissue7: processed 10,000,000 reads
+[COUNT] Tissue7: processed 11,000,000 reads
+[COUNT] Tissue7: processed 12,000,000 reads
+[COUNT] Tissue7: processed 13,000,000 reads
+[COUNT] Tissue7: processed 14,000,000 reads
+[COUNT] Tissue7: processed 15,000,000 reads
+[COUNT] Tissue7: processed 16,000,000 reads
+[COUNT] Tissue7: processed 17,000,000 reads
+[COUNT] Tissue7: processed 18,000,000 reads
+[DONE] Tissue7: total_reads=18,540,305
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue7/sum_onTargetRate_Tissue7.csv
+======================================================================
+[COUNT] Sample: Tissue8
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue8_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue8: processed 1,000,000 reads
+[COUNT] Tissue8: processed 2,000,000 reads
+[COUNT] Tissue8: processed 3,000,000 reads
+[COUNT] Tissue8: processed 4,000,000 reads
+[COUNT] Tissue8: processed 5,000,000 reads
+[COUNT] Tissue8: processed 6,000,000 reads
+[COUNT] Tissue8: processed 7,000,000 reads
+[COUNT] Tissue8: processed 8,000,000 reads
+[COUNT] Tissue8: processed 9,000,000 reads
+[COUNT] Tissue8: processed 10,000,000 reads
+[COUNT] Tissue8: processed 11,000,000 reads
+[COUNT] Tissue8: processed 12,000,000 reads
+[COUNT] Tissue8: processed 13,000,000 reads
+[COUNT] Tissue8: processed 14,000,000 reads
+[COUNT] Tissue8: processed 15,000,000 reads
+[COUNT] Tissue8: processed 16,000,000 reads
+[COUNT] Tissue8: processed 17,000,000 reads
+[COUNT] Tissue8: processed 18,000,000 reads
+[COUNT] Tissue8: processed 19,000,000 reads
+[DONE] Tissue8: total_reads=19,571,494
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue8/sum_onTargetRate_Tissue8.csv
+======================================================================
+[COUNT] Sample: Tissue9
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue9_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue9: processed 1,000,000 reads
+[COUNT] Tissue9: processed 2,000,000 reads
+[COUNT] Tissue9: processed 3,000,000 reads
+[COUNT] Tissue9: processed 4,000,000 reads
+[COUNT] Tissue9: processed 5,000,000 reads
+[COUNT] Tissue9: processed 6,000,000 reads
+[COUNT] Tissue9: processed 7,000,000 reads
+[COUNT] Tissue9: processed 8,000,000 reads
+[COUNT] Tissue9: processed 9,000,000 reads
+[COUNT] Tissue9: processed 10,000,000 reads
+[COUNT] Tissue9: processed 11,000,000 reads
+[COUNT] Tissue9: processed 12,000,000 reads
+[COUNT] Tissue9: processed 13,000,000 reads
+[COUNT] Tissue9: processed 14,000,000 reads
+[COUNT] Tissue9: processed 15,000,000 reads
+[COUNT] Tissue9: processed 16,000,000 reads
+[COUNT] Tissue9: processed 17,000,000 reads
+[COUNT] Tissue9: processed 18,000,000 reads
+[COUNT] Tissue9: processed 19,000,000 reads
+[DONE] Tissue9: total_reads=19,160,961
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue9/sum_onTargetRate_Tissue9.csv
+======================================================================
+[COUNT] Sample: Tissue10
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue10_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue10: processed 1,000,000 reads
+[COUNT] Tissue10: processed 2,000,000 reads
+[COUNT] Tissue10: processed 3,000,000 reads
+[COUNT] Tissue10: processed 4,000,000 reads
+[COUNT] Tissue10: processed 5,000,000 reads
+[COUNT] Tissue10: processed 6,000,000 reads
+[COUNT] Tissue10: processed 7,000,000 reads
+[COUNT] Tissue10: processed 8,000,000 reads
+[COUNT] Tissue10: processed 9,000,000 reads
+[COUNT] Tissue10: processed 10,000,000 reads
+[COUNT] Tissue10: processed 11,000,000 reads
+[COUNT] Tissue10: processed 12,000,000 reads
+[COUNT] Tissue10: processed 13,000,000 reads
+[COUNT] Tissue10: processed 14,000,000 reads
+[COUNT] Tissue10: processed 15,000,000 reads
+[COUNT] Tissue10: processed 16,000,000 reads
+[COUNT] Tissue10: processed 17,000,000 reads
+[COUNT] Tissue10: processed 18,000,000 reads
+[COUNT] Tissue10: processed 19,000,000 reads
+[COUNT] Tissue10: processed 20,000,000 reads
+[COUNT] Tissue10: processed 21,000,000 reads
+[DONE] Tissue10: total_reads=21,672,923
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue10/sum_onTargetRate_Tissue10.csv
+======================================================================
+[COUNT] Sample: Tissue11
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue11_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue11: processed 1,000,000 reads
+[COUNT] Tissue11: processed 2,000,000 reads
+[COUNT] Tissue11: processed 3,000,000 reads
+[COUNT] Tissue11: processed 4,000,000 reads
+[COUNT] Tissue11: processed 5,000,000 reads
+[COUNT] Tissue11: processed 6,000,000 reads
+[COUNT] Tissue11: processed 7,000,000 reads
+[COUNT] Tissue11: processed 8,000,000 reads
+[COUNT] Tissue11: processed 9,000,000 reads
+[COUNT] Tissue11: processed 10,000,000 reads
+[COUNT] Tissue11: processed 11,000,000 reads
+[COUNT] Tissue11: processed 12,000,000 reads
+[COUNT] Tissue11: processed 13,000,000 reads
+[COUNT] Tissue11: processed 14,000,000 reads
+[DONE] Tissue11: total_reads=14,427,552
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue11/sum_onTargetRate_Tissue11.csv
+======================================================================
+[COUNT] Sample: Tissue12
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue12_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue12: processed 1,000,000 reads
+[COUNT] Tissue12: processed 2,000,000 reads
+[COUNT] Tissue12: processed 3,000,000 reads
+[COUNT] Tissue12: processed 4,000,000 reads
+[COUNT] Tissue12: processed 5,000,000 reads
+[COUNT] Tissue12: processed 6,000,000 reads
+[COUNT] Tissue12: processed 7,000,000 reads
+[COUNT] Tissue12: processed 8,000,000 reads
+[COUNT] Tissue12: processed 9,000,000 reads
+[COUNT] Tissue12: processed 10,000,000 reads
+[COUNT] Tissue12: processed 11,000,000 reads
+[COUNT] Tissue12: processed 12,000,000 reads
+[COUNT] Tissue12: processed 13,000,000 reads
+[COUNT] Tissue12: processed 14,000,000 reads
+[COUNT] Tissue12: processed 15,000,000 reads
+[COUNT] Tissue12: processed 16,000,000 reads
+[COUNT] Tissue12: processed 17,000,000 reads
+[COUNT] Tissue12: processed 18,000,000 reads
+[DONE] Tissue12: total_reads=18,204,090
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue12/sum_onTargetRate_Tissue12.csv
+======================================================================
+[COUNT] Sample: Tissue13
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue13_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue13: processed 1,000,000 reads
+[COUNT] Tissue13: processed 2,000,000 reads
+[COUNT] Tissue13: processed 3,000,000 reads
+[COUNT] Tissue13: processed 4,000,000 reads
+[COUNT] Tissue13: processed 5,000,000 reads
+[COUNT] Tissue13: processed 6,000,000 reads
+[COUNT] Tissue13: processed 7,000,000 reads
+[COUNT] Tissue13: processed 8,000,000 reads
+[COUNT] Tissue13: processed 9,000,000 reads
+[COUNT] Tissue13: processed 10,000,000 reads
+[COUNT] Tissue13: processed 11,000,000 reads
+[COUNT] Tissue13: processed 12,000,000 reads
+[COUNT] Tissue13: processed 13,000,000 reads
+[COUNT] Tissue13: processed 14,000,000 reads
+[COUNT] Tissue13: processed 15,000,000 reads
+[DONE] Tissue13: total_reads=15,746,932
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue13/sum_onTargetRate_Tissue13.csv
+======================================================================
+[COUNT] Sample: Tissue14
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue14_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue14: processed 1,000,000 reads
+[COUNT] Tissue14: processed 2,000,000 reads
+[COUNT] Tissue14: processed 3,000,000 reads
+[COUNT] Tissue14: processed 4,000,000 reads
+[COUNT] Tissue14: processed 5,000,000 reads
+[COUNT] Tissue14: processed 6,000,000 reads
+[COUNT] Tissue14: processed 7,000,000 reads
+[COUNT] Tissue14: processed 8,000,000 reads
+[COUNT] Tissue14: processed 9,000,000 reads
+[COUNT] Tissue14: processed 10,000,000 reads
+[COUNT] Tissue14: processed 11,000,000 reads
+[COUNT] Tissue14: processed 12,000,000 reads
+[COUNT] Tissue14: processed 13,000,000 reads
+[COUNT] Tissue14: processed 14,000,000 reads
+[COUNT] Tissue14: processed 15,000,000 reads
+[COUNT] Tissue14: processed 16,000,000 reads
+[DONE] Tissue14: total_reads=16,832,567
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue14/sum_onTargetRate_Tissue14.csv
+======================================================================
+[COUNT] Sample: Tissue16
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue16_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue16: processed 1,000,000 reads
+[COUNT] Tissue16: processed 2,000,000 reads
+[COUNT] Tissue16: processed 3,000,000 reads
+[COUNT] Tissue16: processed 4,000,000 reads
+[COUNT] Tissue16: processed 5,000,000 reads
+[COUNT] Tissue16: processed 6,000,000 reads
+[COUNT] Tissue16: processed 7,000,000 reads
+[COUNT] Tissue16: processed 8,000,000 reads
+[COUNT] Tissue16: processed 9,000,000 reads
+[COUNT] Tissue16: processed 10,000,000 reads
+[COUNT] Tissue16: processed 11,000,000 reads
+[COUNT] Tissue16: processed 12,000,000 reads
+[COUNT] Tissue16: processed 13,000,000 reads
+[COUNT] Tissue16: processed 14,000,000 reads
+[COUNT] Tissue16: processed 15,000,000 reads
+[COUNT] Tissue16: processed 16,000,000 reads
+[COUNT] Tissue16: processed 17,000,000 reads
+[COUNT] Tissue16: processed 18,000,000 reads
+[COUNT] Tissue16: processed 19,000,000 reads
+[DONE] Tissue16: total_reads=19,844,889
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue16/sum_onTargetRate_Tissue16.csv
+======================================================================
+[COUNT] Sample: Tissue17
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue17_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue17: processed 1,000,000 reads
+[COUNT] Tissue17: processed 2,000,000 reads
+[COUNT] Tissue17: processed 3,000,000 reads
+[COUNT] Tissue17: processed 4,000,000 reads
+[COUNT] Tissue17: processed 5,000,000 reads
+[COUNT] Tissue17: processed 6,000,000 reads
+[COUNT] Tissue17: processed 7,000,000 reads
+[COUNT] Tissue17: processed 8,000,000 reads
+[COUNT] Tissue17: processed 9,000,000 reads
+[COUNT] Tissue17: processed 10,000,000 reads
+[COUNT] Tissue17: processed 11,000,000 reads
+[COUNT] Tissue17: processed 12,000,000 reads
+[COUNT] Tissue17: processed 13,000,000 reads
+[COUNT] Tissue17: processed 14,000,000 reads
+[COUNT] Tissue17: processed 15,000,000 reads
+[COUNT] Tissue17: processed 16,000,000 reads
+[COUNT] Tissue17: processed 17,000,000 reads
+[DONE] Tissue17: total_reads=17,354,300
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue17/sum_onTargetRate_Tissue17.csv
+======================================================================
+[COUNT] Sample: Tissue18
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue18_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue18: processed 1,000,000 reads
+[COUNT] Tissue18: processed 2,000,000 reads
+[COUNT] Tissue18: processed 3,000,000 reads
+[COUNT] Tissue18: processed 4,000,000 reads
+[COUNT] Tissue18: processed 5,000,000 reads
+[COUNT] Tissue18: processed 6,000,000 reads
+[COUNT] Tissue18: processed 7,000,000 reads
+[COUNT] Tissue18: processed 8,000,000 reads
+[COUNT] Tissue18: processed 9,000,000 reads
+[COUNT] Tissue18: processed 10,000,000 reads
+[COUNT] Tissue18: processed 11,000,000 reads
+[COUNT] Tissue18: processed 12,000,000 reads
+[DONE] Tissue18: total_reads=12,444,803
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue18/sum_onTargetRate_Tissue18.csv
+======================================================================
+[COUNT] Sample: Tissue19
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue19_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue19: processed 1,000,000 reads
+[COUNT] Tissue19: processed 2,000,000 reads
+[COUNT] Tissue19: processed 3,000,000 reads
+[COUNT] Tissue19: processed 4,000,000 reads
+[COUNT] Tissue19: processed 5,000,000 reads
+[COUNT] Tissue19: processed 6,000,000 reads
+[COUNT] Tissue19: processed 7,000,000 reads
+[COUNT] Tissue19: processed 8,000,000 reads
+[COUNT] Tissue19: processed 9,000,000 reads
+[COUNT] Tissue19: processed 10,000,000 reads
+[COUNT] Tissue19: processed 11,000,000 reads
+[COUNT] Tissue19: processed 12,000,000 reads
+[COUNT] Tissue19: processed 13,000,000 reads
+[COUNT] Tissue19: processed 14,000,000 reads
+[COUNT] Tissue19: processed 15,000,000 reads
+[COUNT] Tissue19: processed 16,000,000 reads
+[COUNT] Tissue19: processed 17,000,000 reads
+[COUNT] Tissue19: processed 18,000,000 reads
+[DONE] Tissue19: total_reads=18,235,761
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue19/sum_onTargetRate_Tissue19.csv
+======================================================================
+[COUNT] Sample: Tissue20
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue20_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue20: processed 1,000,000 reads
+[COUNT] Tissue20: processed 2,000,000 reads
+[COUNT] Tissue20: processed 3,000,000 reads
+[COUNT] Tissue20: processed 4,000,000 reads
+[COUNT] Tissue20: processed 5,000,000 reads
+[COUNT] Tissue20: processed 6,000,000 reads
+[COUNT] Tissue20: processed 7,000,000 reads
+[COUNT] Tissue20: processed 8,000,000 reads
+[COUNT] Tissue20: processed 9,000,000 reads
+[COUNT] Tissue20: processed 10,000,000 reads
+[COUNT] Tissue20: processed 11,000,000 reads
+[COUNT] Tissue20: processed 12,000,000 reads
+[COUNT] Tissue20: processed 13,000,000 reads
+[COUNT] Tissue20: processed 14,000,000 reads
+[COUNT] Tissue20: processed 15,000,000 reads
+[COUNT] Tissue20: processed 16,000,000 reads
+[COUNT] Tissue20: processed 17,000,000 reads
+[DONE] Tissue20: total_reads=17,047,267
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue20/sum_onTargetRate_Tissue20.csv
+======================================================================
+[COUNT] Sample: Tissue21
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue21_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue21: processed 1,000,000 reads
+[COUNT] Tissue21: processed 2,000,000 reads
+[COUNT] Tissue21: processed 3,000,000 reads
+[COUNT] Tissue21: processed 4,000,000 reads
+[COUNT] Tissue21: processed 5,000,000 reads
+[COUNT] Tissue21: processed 6,000,000 reads
+[COUNT] Tissue21: processed 7,000,000 reads
+[COUNT] Tissue21: processed 8,000,000 reads
+[COUNT] Tissue21: processed 9,000,000 reads
+[COUNT] Tissue21: processed 10,000,000 reads
+[COUNT] Tissue21: processed 11,000,000 reads
+[COUNT] Tissue21: processed 12,000,000 reads
+[COUNT] Tissue21: processed 13,000,000 reads
+[COUNT] Tissue21: processed 14,000,000 reads
+[COUNT] Tissue21: processed 15,000,000 reads
+[COUNT] Tissue21: processed 16,000,000 reads
+[DONE] Tissue21: total_reads=16,967,848
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue21/sum_onTargetRate_Tissue21.csv
+======================================================================
+[COUNT] Sample: Tissue22
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue22_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue22: processed 1,000,000 reads
+[COUNT] Tissue22: processed 2,000,000 reads
+[COUNT] Tissue22: processed 3,000,000 reads
+[COUNT] Tissue22: processed 4,000,000 reads
+[COUNT] Tissue22: processed 5,000,000 reads
+[COUNT] Tissue22: processed 6,000,000 reads
+[COUNT] Tissue22: processed 7,000,000 reads
+[COUNT] Tissue22: processed 8,000,000 reads
+[COUNT] Tissue22: processed 9,000,000 reads
+[COUNT] Tissue22: processed 10,000,000 reads
+[COUNT] Tissue22: processed 11,000,000 reads
+[COUNT] Tissue22: processed 12,000,000 reads
+[COUNT] Tissue22: processed 13,000,000 reads
+[COUNT] Tissue22: processed 14,000,000 reads
+[COUNT] Tissue22: processed 15,000,000 reads
+[COUNT] Tissue22: processed 16,000,000 reads
+[COUNT] Tissue22: processed 17,000,000 reads
+[DONE] Tissue22: total_reads=17,297,815
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue22/sum_onTargetRate_Tissue22.csv
+======================================================================
+[COUNT] Sample: Tissue23
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue23_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue23: processed 1,000,000 reads
+[COUNT] Tissue23: processed 2,000,000 reads
+[COUNT] Tissue23: processed 3,000,000 reads
+[COUNT] Tissue23: processed 4,000,000 reads
+[COUNT] Tissue23: processed 5,000,000 reads
+[COUNT] Tissue23: processed 6,000,000 reads
+[COUNT] Tissue23: processed 7,000,000 reads
+[COUNT] Tissue23: processed 8,000,000 reads
+[COUNT] Tissue23: processed 9,000,000 reads
+[COUNT] Tissue23: processed 10,000,000 reads
+[COUNT] Tissue23: processed 11,000,000 reads
+[COUNT] Tissue23: processed 12,000,000 reads
+[COUNT] Tissue23: processed 13,000,000 reads
+[COUNT] Tissue23: processed 14,000,000 reads
+[COUNT] Tissue23: processed 15,000,000 reads
+[COUNT] Tissue23: processed 16,000,000 reads
+[DONE] Tissue23: total_reads=16,659,361
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue23/sum_onTargetRate_Tissue23.csv
+======================================================================
+[COUNT] Sample: Tissue24
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue24_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue24: processed 1,000,000 reads
+[COUNT] Tissue24: processed 2,000,000 reads
+[COUNT] Tissue24: processed 3,000,000 reads
+[COUNT] Tissue24: processed 4,000,000 reads
+[COUNT] Tissue24: processed 5,000,000 reads
+[COUNT] Tissue24: processed 6,000,000 reads
+[COUNT] Tissue24: processed 7,000,000 reads
+[COUNT] Tissue24: processed 8,000,000 reads
+[COUNT] Tissue24: processed 9,000,000 reads
+[COUNT] Tissue24: processed 10,000,000 reads
+[COUNT] Tissue24: processed 11,000,000 reads
+[COUNT] Tissue24: processed 12,000,000 reads
+[COUNT] Tissue24: processed 13,000,000 reads
+[COUNT] Tissue24: processed 14,000,000 reads
+[COUNT] Tissue24: processed 15,000,000 reads
+[COUNT] Tissue24: processed 16,000,000 reads
+[COUNT] Tissue24: processed 17,000,000 reads
+[COUNT] Tissue24: processed 18,000,000 reads
+[DONE] Tissue24: total_reads=18,593,382
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue24/sum_onTargetRate_Tissue24.csv
+======================================================================
+[COUNT] Sample: Tissue25
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue25_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue25: processed 1,000,000 reads
+[COUNT] Tissue25: processed 2,000,000 reads
+[COUNT] Tissue25: processed 3,000,000 reads
+[COUNT] Tissue25: processed 4,000,000 reads
+[COUNT] Tissue25: processed 5,000,000 reads
+[COUNT] Tissue25: processed 6,000,000 reads
+[COUNT] Tissue25: processed 7,000,000 reads
+[COUNT] Tissue25: processed 8,000,000 reads
+[COUNT] Tissue25: processed 9,000,000 reads
+[COUNT] Tissue25: processed 10,000,000 reads
+[COUNT] Tissue25: processed 11,000,000 reads
+[COUNT] Tissue25: processed 12,000,000 reads
+[COUNT] Tissue25: processed 13,000,000 reads
+[COUNT] Tissue25: processed 14,000,000 reads
+[COUNT] Tissue25: processed 15,000,000 reads
+[COUNT] Tissue25: processed 16,000,000 reads
+[DONE] Tissue25: total_reads=16,850,482
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue25/sum_onTargetRate_Tissue25.csv
+======================================================================
+[COUNT] Sample: Tissue27
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue27_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue27: processed 1,000,000 reads
+[COUNT] Tissue27: processed 2,000,000 reads
+[COUNT] Tissue27: processed 3,000,000 reads
+[COUNT] Tissue27: processed 4,000,000 reads
+[COUNT] Tissue27: processed 5,000,000 reads
+[COUNT] Tissue27: processed 6,000,000 reads
+[COUNT] Tissue27: processed 7,000,000 reads
+[COUNT] Tissue27: processed 8,000,000 reads
+[COUNT] Tissue27: processed 9,000,000 reads
+[COUNT] Tissue27: processed 10,000,000 reads
+[COUNT] Tissue27: processed 11,000,000 reads
+[COUNT] Tissue27: processed 12,000,000 reads
+[COUNT] Tissue27: processed 13,000,000 reads
+[COUNT] Tissue27: processed 14,000,000 reads
+[COUNT] Tissue27: processed 15,000,000 reads
+[COUNT] Tissue27: processed 16,000,000 reads
+[COUNT] Tissue27: processed 17,000,000 reads
+[COUNT] Tissue27: processed 18,000,000 reads
+[COUNT] Tissue27: processed 19,000,000 reads
+[DONE] Tissue27: total_reads=19,232,052
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue27/sum_onTargetRate_Tissue27.csv
+======================================================================
+[COUNT] Sample: Tissue28
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue28_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue28: processed 1,000,000 reads
+[COUNT] Tissue28: processed 2,000,000 reads
+[COUNT] Tissue28: processed 3,000,000 reads
+[COUNT] Tissue28: processed 4,000,000 reads
+[COUNT] Tissue28: processed 5,000,000 reads
+[COUNT] Tissue28: processed 6,000,000 reads
+[COUNT] Tissue28: processed 7,000,000 reads
+[COUNT] Tissue28: processed 8,000,000 reads
+[COUNT] Tissue28: processed 9,000,000 reads
+[COUNT] Tissue28: processed 10,000,000 reads
+[COUNT] Tissue28: processed 11,000,000 reads
+[COUNT] Tissue28: processed 12,000,000 reads
+[COUNT] Tissue28: processed 13,000,000 reads
+[COUNT] Tissue28: processed 14,000,000 reads
+[COUNT] Tissue28: processed 15,000,000 reads
+[COUNT] Tissue28: processed 16,000,000 reads
+[DONE] Tissue28: total_reads=16,826,058
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue28/sum_onTargetRate_Tissue28.csv
+======================================================================
+[COUNT] Sample: Tissue29
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue29_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue29: processed 1,000,000 reads
+[COUNT] Tissue29: processed 2,000,000 reads
+[COUNT] Tissue29: processed 3,000,000 reads
+[COUNT] Tissue29: processed 4,000,000 reads
+[COUNT] Tissue29: processed 5,000,000 reads
+[COUNT] Tissue29: processed 6,000,000 reads
+[COUNT] Tissue29: processed 7,000,000 reads
+[COUNT] Tissue29: processed 8,000,000 reads
+[COUNT] Tissue29: processed 9,000,000 reads
+[COUNT] Tissue29: processed 10,000,000 reads
+[COUNT] Tissue29: processed 11,000,000 reads
+[COUNT] Tissue29: processed 12,000,000 reads
+[COUNT] Tissue29: processed 13,000,000 reads
+[COUNT] Tissue29: processed 14,000,000 reads
+[DONE] Tissue29: total_reads=14,417,844
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue29/sum_onTargetRate_Tissue29.csv
+======================================================================
+[COUNT] Sample: Tissue30
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue30_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue30: processed 1,000,000 reads
+[COUNT] Tissue30: processed 2,000,000 reads
+[COUNT] Tissue30: processed 3,000,000 reads
+[COUNT] Tissue30: processed 4,000,000 reads
+[COUNT] Tissue30: processed 5,000,000 reads
+[COUNT] Tissue30: processed 6,000,000 reads
+[COUNT] Tissue30: processed 7,000,000 reads
+[COUNT] Tissue30: processed 8,000,000 reads
+[COUNT] Tissue30: processed 9,000,000 reads
+[COUNT] Tissue30: processed 10,000,000 reads
+[COUNT] Tissue30: processed 11,000,000 reads
+[COUNT] Tissue30: processed 12,000,000 reads
+[COUNT] Tissue30: processed 13,000,000 reads
+[COUNT] Tissue30: processed 14,000,000 reads
+[COUNT] Tissue30: processed 15,000,000 reads
+[COUNT] Tissue30: processed 16,000,000 reads
+[COUNT] Tissue30: processed 17,000,000 reads
+[COUNT] Tissue30: processed 18,000,000 reads
+[COUNT] Tissue30: processed 19,000,000 reads
+[DONE] Tissue30: total_reads=19,301,629
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue30/sum_onTargetRate_Tissue30.csv
+======================================================================
+[COUNT] Sample: Tissue31
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue31_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue31: processed 1,000,000 reads
+[COUNT] Tissue31: processed 2,000,000 reads
+[COUNT] Tissue31: processed 3,000,000 reads
+[COUNT] Tissue31: processed 4,000,000 reads
+[COUNT] Tissue31: processed 5,000,000 reads
+[COUNT] Tissue31: processed 6,000,000 reads
+[COUNT] Tissue31: processed 7,000,000 reads
+[COUNT] Tissue31: processed 8,000,000 reads
+[COUNT] Tissue31: processed 9,000,000 reads
+[COUNT] Tissue31: processed 10,000,000 reads
+[COUNT] Tissue31: processed 11,000,000 reads
+[COUNT] Tissue31: processed 12,000,000 reads
+[COUNT] Tissue31: processed 13,000,000 reads
+[COUNT] Tissue31: processed 14,000,000 reads
+[COUNT] Tissue31: processed 15,000,000 reads
+[COUNT] Tissue31: processed 16,000,000 reads
+[DONE] Tissue31: total_reads=16,833,973
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue31/sum_onTargetRate_Tissue31.csv
+======================================================================
+[COUNT] Sample: Tissue32
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue32_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue32: processed 1,000,000 reads
+[COUNT] Tissue32: processed 2,000,000 reads
+[COUNT] Tissue32: processed 3,000,000 reads
+[COUNT] Tissue32: processed 4,000,000 reads
+[COUNT] Tissue32: processed 5,000,000 reads
+[COUNT] Tissue32: processed 6,000,000 reads
+[COUNT] Tissue32: processed 7,000,000 reads
+[COUNT] Tissue32: processed 8,000,000 reads
+[COUNT] Tissue32: processed 9,000,000 reads
+[COUNT] Tissue32: processed 10,000,000 reads
+[COUNT] Tissue32: processed 11,000,000 reads
+[COUNT] Tissue32: processed 12,000,000 reads
+[COUNT] Tissue32: processed 13,000,000 reads
+[COUNT] Tissue32: processed 14,000,000 reads
+[COUNT] Tissue32: processed 15,000,000 reads
+[COUNT] Tissue32: processed 16,000,000 reads
+[COUNT] Tissue32: processed 17,000,000 reads
+[COUNT] Tissue32: processed 18,000,000 reads
+[DONE] Tissue32: total_reads=18,875,074
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue32/sum_onTargetRate_Tissue32.csv
+======================================================================
+[COUNT] Sample: Tissue33
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue33_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue33: processed 1,000,000 reads
+[COUNT] Tissue33: processed 2,000,000 reads
+[COUNT] Tissue33: processed 3,000,000 reads
+[COUNT] Tissue33: processed 4,000,000 reads
+[COUNT] Tissue33: processed 5,000,000 reads
+[COUNT] Tissue33: processed 6,000,000 reads
+[COUNT] Tissue33: processed 7,000,000 reads
+[COUNT] Tissue33: processed 8,000,000 reads
+[COUNT] Tissue33: processed 9,000,000 reads
+[COUNT] Tissue33: processed 10,000,000 reads
+[COUNT] Tissue33: processed 11,000,000 reads
+[COUNT] Tissue33: processed 12,000,000 reads
+[COUNT] Tissue33: processed 13,000,000 reads
+[COUNT] Tissue33: processed 14,000,000 reads
+[COUNT] Tissue33: processed 15,000,000 reads
+[COUNT] Tissue33: processed 16,000,000 reads
+[COUNT] Tissue33: processed 17,000,000 reads
+[DONE] Tissue33: total_reads=17,057,216
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue33/sum_onTargetRate_Tissue33.csv
+======================================================================
+[COUNT] Sample: Tissue34
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue34_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue34: processed 1,000,000 reads
+[COUNT] Tissue34: processed 2,000,000 reads
+[COUNT] Tissue34: processed 3,000,000 reads
+[COUNT] Tissue34: processed 4,000,000 reads
+[COUNT] Tissue34: processed 5,000,000 reads
+[COUNT] Tissue34: processed 6,000,000 reads
+[COUNT] Tissue34: processed 7,000,000 reads
+[COUNT] Tissue34: processed 8,000,000 reads
+[COUNT] Tissue34: processed 9,000,000 reads
+[COUNT] Tissue34: processed 10,000,000 reads
+[COUNT] Tissue34: processed 11,000,000 reads
+[COUNT] Tissue34: processed 12,000,000 reads
+[COUNT] Tissue34: processed 13,000,000 reads
+[COUNT] Tissue34: processed 14,000,000 reads
+[COUNT] Tissue34: processed 15,000,000 reads
+[COUNT] Tissue34: processed 16,000,000 reads
+[COUNT] Tissue34: processed 17,000,000 reads
+[COUNT] Tissue34: processed 18,000,000 reads
+[COUNT] Tissue34: processed 19,000,000 reads
+[DONE] Tissue34: total_reads=19,476,225
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue34/sum_onTargetRate_Tissue34.csv
+======================================================================
+[COUNT] Sample: Tissue35
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue35_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue35: processed 1,000,000 reads
+[COUNT] Tissue35: processed 2,000,000 reads
+[COUNT] Tissue35: processed 3,000,000 reads
+[COUNT] Tissue35: processed 4,000,000 reads
+[COUNT] Tissue35: processed 5,000,000 reads
+[COUNT] Tissue35: processed 6,000,000 reads
+[COUNT] Tissue35: processed 7,000,000 reads
+[COUNT] Tissue35: processed 8,000,000 reads
+[COUNT] Tissue35: processed 9,000,000 reads
+[COUNT] Tissue35: processed 10,000,000 reads
+[COUNT] Tissue35: processed 11,000,000 reads
+[COUNT] Tissue35: processed 12,000,000 reads
+[COUNT] Tissue35: processed 13,000,000 reads
+[COUNT] Tissue35: processed 14,000,000 reads
+[COUNT] Tissue35: processed 15,000,000 reads
+[COUNT] Tissue35: processed 16,000,000 reads
+[COUNT] Tissue35: processed 17,000,000 reads
+[COUNT] Tissue35: processed 18,000,000 reads
+[DONE] Tissue35: total_reads=18,688,811
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue35/sum_onTargetRate_Tissue35.csv
+======================================================================
+[COUNT] Sample: Tissue37
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue37_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue37: processed 1,000,000 reads
+[COUNT] Tissue37: processed 2,000,000 reads
+[COUNT] Tissue37: processed 3,000,000 reads
+[COUNT] Tissue37: processed 4,000,000 reads
+[COUNT] Tissue37: processed 5,000,000 reads
+[COUNT] Tissue37: processed 6,000,000 reads
+[COUNT] Tissue37: processed 7,000,000 reads
+[COUNT] Tissue37: processed 8,000,000 reads
+[COUNT] Tissue37: processed 9,000,000 reads
+[COUNT] Tissue37: processed 10,000,000 reads
+[COUNT] Tissue37: processed 11,000,000 reads
+[COUNT] Tissue37: processed 12,000,000 reads
+[COUNT] Tissue37: processed 13,000,000 reads
+[COUNT] Tissue37: processed 14,000,000 reads
+[DONE] Tissue37: total_reads=14,634,348
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue37/sum_onTargetRate_Tissue37.csv
+======================================================================
+[COUNT] Sample: Tissue38
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue38_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue38: processed 1,000,000 reads
+[COUNT] Tissue38: processed 2,000,000 reads
+[COUNT] Tissue38: processed 3,000,000 reads
+[COUNT] Tissue38: processed 4,000,000 reads
+[COUNT] Tissue38: processed 5,000,000 reads
+[COUNT] Tissue38: processed 6,000,000 reads
+[COUNT] Tissue38: processed 7,000,000 reads
+[COUNT] Tissue38: processed 8,000,000 reads
+[COUNT] Tissue38: processed 9,000,000 reads
+[COUNT] Tissue38: processed 10,000,000 reads
+[COUNT] Tissue38: processed 11,000,000 reads
+[COUNT] Tissue38: processed 12,000,000 reads
+[COUNT] Tissue38: processed 13,000,000 reads
+[COUNT] Tissue38: processed 14,000,000 reads
+[COUNT] Tissue38: processed 15,000,000 reads
+[DONE] Tissue38: total_reads=15,834,767
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue38/sum_onTargetRate_Tissue38.csv
+======================================================================
+[COUNT] Sample: Tissue39
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue39_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue39: processed 1,000,000 reads
+[COUNT] Tissue39: processed 2,000,000 reads
+[COUNT] Tissue39: processed 3,000,000 reads
+[COUNT] Tissue39: processed 4,000,000 reads
+[COUNT] Tissue39: processed 5,000,000 reads
+[COUNT] Tissue39: processed 6,000,000 reads
+[COUNT] Tissue39: processed 7,000,000 reads
+[COUNT] Tissue39: processed 8,000,000 reads
+[COUNT] Tissue39: processed 9,000,000 reads
+[COUNT] Tissue39: processed 10,000,000 reads
+[COUNT] Tissue39: processed 11,000,000 reads
+[COUNT] Tissue39: processed 12,000,000 reads
+[COUNT] Tissue39: processed 13,000,000 reads
+[COUNT] Tissue39: processed 14,000,000 reads
+[COUNT] Tissue39: processed 15,000,000 reads
+[DONE] Tissue39: total_reads=15,828,148
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue39/sum_onTargetRate_Tissue39.csv
+======================================================================
+[COUNT] Sample: Tissue40
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue40_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue40: processed 1,000,000 reads
+[COUNT] Tissue40: processed 2,000,000 reads
+[COUNT] Tissue40: processed 3,000,000 reads
+[COUNT] Tissue40: processed 4,000,000 reads
+[COUNT] Tissue40: processed 5,000,000 reads
+[COUNT] Tissue40: processed 6,000,000 reads
+[COUNT] Tissue40: processed 7,000,000 reads
+[COUNT] Tissue40: processed 8,000,000 reads
+[COUNT] Tissue40: processed 9,000,000 reads
+[COUNT] Tissue40: processed 10,000,000 reads
+[COUNT] Tissue40: processed 11,000,000 reads
+[COUNT] Tissue40: processed 12,000,000 reads
+[COUNT] Tissue40: processed 13,000,000 reads
+[COUNT] Tissue40: processed 14,000,000 reads
+[COUNT] Tissue40: processed 15,000,000 reads
+[DONE] Tissue40: total_reads=15,176,730
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue40/sum_onTargetRate_Tissue40.csv
+======================================================================
+[COUNT] Sample: Tissue42
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue42_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue42: processed 1,000,000 reads
+[COUNT] Tissue42: processed 2,000,000 reads
+[COUNT] Tissue42: processed 3,000,000 reads
+[COUNT] Tissue42: processed 4,000,000 reads
+[COUNT] Tissue42: processed 5,000,000 reads
+[COUNT] Tissue42: processed 6,000,000 reads
+[COUNT] Tissue42: processed 7,000,000 reads
+[COUNT] Tissue42: processed 8,000,000 reads
+[COUNT] Tissue42: processed 9,000,000 reads
+[COUNT] Tissue42: processed 10,000,000 reads
+[COUNT] Tissue42: processed 11,000,000 reads
+[COUNT] Tissue42: processed 12,000,000 reads
+[COUNT] Tissue42: processed 13,000,000 reads
+[COUNT] Tissue42: processed 14,000,000 reads
+[DONE] Tissue42: total_reads=14,736,911
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue42/sum_onTargetRate_Tissue42.csv
+======================================================================
+[COUNT] Sample: Tissue43
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue43_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue43: processed 1,000,000 reads
+[COUNT] Tissue43: processed 2,000,000 reads
+[COUNT] Tissue43: processed 3,000,000 reads
+[COUNT] Tissue43: processed 4,000,000 reads
+[COUNT] Tissue43: processed 5,000,000 reads
+[COUNT] Tissue43: processed 6,000,000 reads
+[COUNT] Tissue43: processed 7,000,000 reads
+[COUNT] Tissue43: processed 8,000,000 reads
+[COUNT] Tissue43: processed 9,000,000 reads
+[COUNT] Tissue43: processed 10,000,000 reads
+[COUNT] Tissue43: processed 11,000,000 reads
+[COUNT] Tissue43: processed 12,000,000 reads
+[COUNT] Tissue43: processed 13,000,000 reads
+[COUNT] Tissue43: processed 14,000,000 reads
+[COUNT] Tissue43: processed 15,000,000 reads
+[DONE] Tissue43: total_reads=15,522,442
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue43/sum_onTargetRate_Tissue43.csv
+======================================================================
+[COUNT] Sample: Tissue44
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue44_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue44: processed 1,000,000 reads
+[COUNT] Tissue44: processed 2,000,000 reads
+[COUNT] Tissue44: processed 3,000,000 reads
+[COUNT] Tissue44: processed 4,000,000 reads
+[COUNT] Tissue44: processed 5,000,000 reads
+[COUNT] Tissue44: processed 6,000,000 reads
+[COUNT] Tissue44: processed 7,000,000 reads
+[COUNT] Tissue44: processed 8,000,000 reads
+[COUNT] Tissue44: processed 9,000,000 reads
+[COUNT] Tissue44: processed 10,000,000 reads
+[COUNT] Tissue44: processed 11,000,000 reads
+[COUNT] Tissue44: processed 12,000,000 reads
+[COUNT] Tissue44: processed 13,000,000 reads
+[COUNT] Tissue44: processed 14,000,000 reads
+[COUNT] Tissue44: processed 15,000,000 reads
+[COUNT] Tissue44: processed 16,000,000 reads
+[DONE] Tissue44: total_reads=16,115,286
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue44/sum_onTargetRate_Tissue44.csv
+======================================================================
+[COUNT] Sample: Tissue45
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue45_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue45: processed 1,000,000 reads
+[COUNT] Tissue45: processed 2,000,000 reads
+[COUNT] Tissue45: processed 3,000,000 reads
+[COUNT] Tissue45: processed 4,000,000 reads
+[COUNT] Tissue45: processed 5,000,000 reads
+[COUNT] Tissue45: processed 6,000,000 reads
+[COUNT] Tissue45: processed 7,000,000 reads
+[COUNT] Tissue45: processed 8,000,000 reads
+[COUNT] Tissue45: processed 9,000,000 reads
+[COUNT] Tissue45: processed 10,000,000 reads
+[COUNT] Tissue45: processed 11,000,000 reads
+[COUNT] Tissue45: processed 12,000,000 reads
+[COUNT] Tissue45: processed 13,000,000 reads
+[COUNT] Tissue45: processed 14,000,000 reads
+[COUNT] Tissue45: processed 15,000,000 reads
+[COUNT] Tissue45: processed 16,000,000 reads
+[COUNT] Tissue45: processed 17,000,000 reads
+[COUNT] Tissue45: processed 18,000,000 reads
+[DONE] Tissue45: total_reads=18,959,231
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue45/sum_onTargetRate_Tissue45.csv
+======================================================================
+[COUNT] Sample: Tissue46
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue46_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue46: processed 1,000,000 reads
+[COUNT] Tissue46: processed 2,000,000 reads
+[COUNT] Tissue46: processed 3,000,000 reads
+[COUNT] Tissue46: processed 4,000,000 reads
+[COUNT] Tissue46: processed 5,000,000 reads
+[COUNT] Tissue46: processed 6,000,000 reads
+[COUNT] Tissue46: processed 7,000,000 reads
+[COUNT] Tissue46: processed 8,000,000 reads
+[COUNT] Tissue46: processed 9,000,000 reads
+[COUNT] Tissue46: processed 10,000,000 reads
+[COUNT] Tissue46: processed 11,000,000 reads
+[COUNT] Tissue46: processed 12,000,000 reads
+[COUNT] Tissue46: processed 13,000,000 reads
+[COUNT] Tissue46: processed 14,000,000 reads
+[COUNT] Tissue46: processed 15,000,000 reads
+[COUNT] Tissue46: processed 16,000,000 reads
+[COUNT] Tissue46: processed 17,000,000 reads
+[DONE] Tissue46: total_reads=17,435,295
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue46/sum_onTargetRate_Tissue46.csv
+======================================================================
+[COUNT] Sample: Tissue47
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue47_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue47: processed 1,000,000 reads
+[COUNT] Tissue47: processed 2,000,000 reads
+[COUNT] Tissue47: processed 3,000,000 reads
+[COUNT] Tissue47: processed 4,000,000 reads
+[COUNT] Tissue47: processed 5,000,000 reads
+[COUNT] Tissue47: processed 6,000,000 reads
+[COUNT] Tissue47: processed 7,000,000 reads
+[COUNT] Tissue47: processed 8,000,000 reads
+[COUNT] Tissue47: processed 9,000,000 reads
+[COUNT] Tissue47: processed 10,000,000 reads
+[COUNT] Tissue47: processed 11,000,000 reads
+[COUNT] Tissue47: processed 12,000,000 reads
+[COUNT] Tissue47: processed 13,000,000 reads
+[DONE] Tissue47: total_reads=13,029,121
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue47/sum_onTargetRate_Tissue47.csv
+======================================================================
+[COUNT] Sample: Tissue48
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue48_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue48: processed 1,000,000 reads
+[COUNT] Tissue48: processed 2,000,000 reads
+[COUNT] Tissue48: processed 3,000,000 reads
+[COUNT] Tissue48: processed 4,000,000 reads
+[COUNT] Tissue48: processed 5,000,000 reads
+[COUNT] Tissue48: processed 6,000,000 reads
+[COUNT] Tissue48: processed 7,000,000 reads
+[COUNT] Tissue48: processed 8,000,000 reads
+[COUNT] Tissue48: processed 9,000,000 reads
+[COUNT] Tissue48: processed 10,000,000 reads
+[COUNT] Tissue48: processed 11,000,000 reads
+[COUNT] Tissue48: processed 12,000,000 reads
+[COUNT] Tissue48: processed 13,000,000 reads
+[COUNT] Tissue48: processed 14,000,000 reads
+[COUNT] Tissue48: processed 15,000,000 reads
+[COUNT] Tissue48: processed 16,000,000 reads
+[COUNT] Tissue48: processed 17,000,000 reads
+[COUNT] Tissue48: processed 18,000,000 reads
+[COUNT] Tissue48: processed 19,000,000 reads
+[COUNT] Tissue48: processed 20,000,000 reads
+[COUNT] Tissue48: processed 21,000,000 reads
+[COUNT] Tissue48: processed 22,000,000 reads
+[DONE] Tissue48: total_reads=22,015,251
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue48/sum_onTargetRate_Tissue48.csv
+======================================================================
+[COUNT] Sample: Tissue49
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue49_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue49: processed 1,000,000 reads
+[COUNT] Tissue49: processed 2,000,000 reads
+[COUNT] Tissue49: processed 3,000,000 reads
+[COUNT] Tissue49: processed 4,000,000 reads
+[COUNT] Tissue49: processed 5,000,000 reads
+[COUNT] Tissue49: processed 6,000,000 reads
+[COUNT] Tissue49: processed 7,000,000 reads
+[COUNT] Tissue49: processed 8,000,000 reads
+[COUNT] Tissue49: processed 9,000,000 reads
+[COUNT] Tissue49: processed 10,000,000 reads
+[COUNT] Tissue49: processed 11,000,000 reads
+[COUNT] Tissue49: processed 12,000,000 reads
+[COUNT] Tissue49: processed 13,000,000 reads
+[COUNT] Tissue49: processed 14,000,000 reads
+[COUNT] Tissue49: processed 15,000,000 reads
+[DONE] Tissue49: total_reads=15,580,042
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue49/sum_onTargetRate_Tissue49.csv
+======================================================================
+[COUNT] Sample: Tissue51
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue51_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue51: processed 1,000,000 reads
+[COUNT] Tissue51: processed 2,000,000 reads
+[COUNT] Tissue51: processed 3,000,000 reads
+[COUNT] Tissue51: processed 4,000,000 reads
+[COUNT] Tissue51: processed 5,000,000 reads
+[COUNT] Tissue51: processed 6,000,000 reads
+[COUNT] Tissue51: processed 7,000,000 reads
+[COUNT] Tissue51: processed 8,000,000 reads
+[COUNT] Tissue51: processed 9,000,000 reads
+[COUNT] Tissue51: processed 10,000,000 reads
+[COUNT] Tissue51: processed 11,000,000 reads
+[DONE] Tissue51: total_reads=11,652,190
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue51/sum_onTargetRate_Tissue51.csv
+======================================================================
+[COUNT] Sample: Tissue52
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue52_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue52: processed 1,000,000 reads
+[COUNT] Tissue52: processed 2,000,000 reads
+[COUNT] Tissue52: processed 3,000,000 reads
+[COUNT] Tissue52: processed 4,000,000 reads
+[COUNT] Tissue52: processed 5,000,000 reads
+[COUNT] Tissue52: processed 6,000,000 reads
+[COUNT] Tissue52: processed 7,000,000 reads
+[COUNT] Tissue52: processed 8,000,000 reads
+[COUNT] Tissue52: processed 9,000,000 reads
+[COUNT] Tissue52: processed 10,000,000 reads
+[COUNT] Tissue52: processed 11,000,000 reads
+[COUNT] Tissue52: processed 12,000,000 reads
+[COUNT] Tissue52: processed 13,000,000 reads
+[COUNT] Tissue52: processed 14,000,000 reads
+[COUNT] Tissue52: processed 15,000,000 reads
+[DONE] Tissue52: total_reads=15,769,597
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue52/sum_onTargetRate_Tissue52.csv
+======================================================================
+[COUNT] Sample: Tissue61
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue61_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue61: processed 1,000,000 reads
+[COUNT] Tissue61: processed 2,000,000 reads
+[COUNT] Tissue61: processed 3,000,000 reads
+[COUNT] Tissue61: processed 4,000,000 reads
+[COUNT] Tissue61: processed 5,000,000 reads
+[COUNT] Tissue61: processed 6,000,000 reads
+[COUNT] Tissue61: processed 7,000,000 reads
+[COUNT] Tissue61: processed 8,000,000 reads
+[COUNT] Tissue61: processed 9,000,000 reads
+[COUNT] Tissue61: processed 10,000,000 reads
+[COUNT] Tissue61: processed 11,000,000 reads
+[COUNT] Tissue61: processed 12,000,000 reads
+[COUNT] Tissue61: processed 13,000,000 reads
+[COUNT] Tissue61: processed 14,000,000 reads
+[COUNT] Tissue61: processed 15,000,000 reads
+[COUNT] Tissue61: processed 16,000,000 reads
+[DONE] Tissue61: total_reads=16,358,559
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue61/sum_onTargetRate_Tissue61.csv
+======================================================================
+[COUNT] Sample: Tissue62
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue62_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue62: processed 1,000,000 reads
+[COUNT] Tissue62: processed 2,000,000 reads
+[COUNT] Tissue62: processed 3,000,000 reads
+[COUNT] Tissue62: processed 4,000,000 reads
+[COUNT] Tissue62: processed 5,000,000 reads
+[COUNT] Tissue62: processed 6,000,000 reads
+[COUNT] Tissue62: processed 7,000,000 reads
+[COUNT] Tissue62: processed 8,000,000 reads
+[COUNT] Tissue62: processed 9,000,000 reads
+[COUNT] Tissue62: processed 10,000,000 reads
+[COUNT] Tissue62: processed 11,000,000 reads
+[COUNT] Tissue62: processed 12,000,000 reads
+[COUNT] Tissue62: processed 13,000,000 reads
+[COUNT] Tissue62: processed 14,000,000 reads
+[COUNT] Tissue62: processed 15,000,000 reads
+[COUNT] Tissue62: processed 16,000,000 reads
+[DONE] Tissue62: total_reads=16,641,862
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue62/sum_onTargetRate_Tissue62.csv
+======================================================================
+[COUNT] Sample: Tissue67
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/Tissue67_qc1.fastq.gz
+======================================================================
+[COUNT] Tissue67: processed 1,000,000 reads
+[COUNT] Tissue67: processed 2,000,000 reads
+[COUNT] Tissue67: processed 3,000,000 reads
+[COUNT] Tissue67: processed 4,000,000 reads
+[COUNT] Tissue67: processed 5,000,000 reads
+[COUNT] Tissue67: processed 6,000,000 reads
+[COUNT] Tissue67: processed 7,000,000 reads
+[COUNT] Tissue67: processed 8,000,000 reads
+[COUNT] Tissue67: processed 9,000,000 reads
+[COUNT] Tissue67: processed 10,000,000 reads
+[COUNT] Tissue67: processed 11,000,000 reads
+[COUNT] Tissue67: processed 12,000,000 reads
+[COUNT] Tissue67: processed 13,000,000 reads
+[COUNT] Tissue67: processed 14,000,000 reads
+[COUNT] Tissue67: processed 15,000,000 reads
+[COUNT] Tissue67: processed 16,000,000 reads
+[DONE] Tissue67: total_reads=16,265,529
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/Tissue67/sum_onTargetRate_Tissue67.csv
+======================================================================
+[COUNT] Sample: TissueB1@
+[COUNT] FASTQ : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/03_fastp/TissueB1@_qc1.fastq.gz
+======================================================================
+[COUNT] TissueB1@: processed 1,000,000 reads
+[COUNT] TissueB1@: processed 2,000,000 reads
+[COUNT] TissueB1@: processed 3,000,000 reads
+[COUNT] TissueB1@: processed 4,000,000 reads
+[COUNT] TissueB1@: processed 5,000,000 reads
+[COUNT] TissueB1@: processed 6,000,000 reads
+[COUNT] TissueB1@: processed 7,000,000 reads
+[COUNT] TissueB1@: processed 8,000,000 reads
+[COUNT] TissueB1@: processed 9,000,000 reads
+[COUNT] TissueB1@: processed 10,000,000 reads
+[COUNT] TissueB1@: processed 11,000,000 reads
+[COUNT] TissueB1@: processed 12,000,000 reads
+[COUNT] TissueB1@: processed 13,000,000 reads
+[COUNT] TissueB1@: processed 14,000,000 reads
+[COUNT] TissueB1@: processed 15,000,000 reads
+[DONE] TissueB1@: total_reads=15,945,755
+[DONE] /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/per_sample/TissueB1@/sum_onTargetRate_TissueB1@.csv
+======================================================================
+All counting done.
+Long table    : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/sum_onTargetRate_ALL_samples_long.csv
+Matrix table  : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/sum_onTargetRate_ALL_samples_matrix.csv
+Overall table : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/overall_onTargetRate_ALL_samples.csv
+Primer audit  : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/04_on_target_rates/primer_audit.txt
+======================================================================
+============================================================
+All done.
+End time : 2026-10-28 05:14:08
+Log      : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result/logs/run_all_20261027_194036.log
+Results  : /data2/lindf/project/HPV_project/20260831_国妇婴组织样本_靶向建库_数据分析/On_target_rates/result
+============================================================
